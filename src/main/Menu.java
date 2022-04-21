@@ -853,112 +853,400 @@ public class Menu extends javax.swing.JFrame {
         
         // setting the modifier values from the point inputs
         //strength
-        if (Integer.parseInt(strengthP) == 1)   jTextMod1.setText("-5");
-        if (Integer.parseInt(strengthP) == 2 || Integer.parseInt(strengthP) == 3)   jTextMod1.setText("-4");
-        if (Integer.parseInt(strengthP) == 4 || Integer.parseInt(strengthP) == 5)   jTextMod1.setText("-3");
-        if (Integer.parseInt(strengthP) == 6 || Integer.parseInt(strengthP) == 7)   jTextMod1.setText("-2");
-        if (Integer.parseInt(strengthP) == 8 || Integer.parseInt(strengthP) == 9)   jTextMod1.setText("-1");
-        if (Integer.parseInt(strengthP) == 10 || Integer.parseInt(strengthP) == 11)   jTextMod1.setText("0");
-        if (Integer.parseInt(strengthP) == 12 || Integer.parseInt(strengthP) == 13)   jTextMod1.setText("1");
-        if (Integer.parseInt(strengthP) == 14 || Integer.parseInt(strengthP) == 15)   jTextMod1.setText("2");
-        if (Integer.parseInt(strengthP) == 16 || Integer.parseInt(strengthP) == 17)   jTextMod1.setText("3");
-        if (Integer.parseInt(strengthP) == 18 || Integer.parseInt(strengthP) == 19)   jTextMod1.setText("4");
-        if (Integer.parseInt(strengthP) == 20 || Integer.parseInt(strengthP) == 21)   jTextMod1.setText("5");
-        if (Integer.parseInt(strengthP) == 22 || Integer.parseInt(strengthP) == 23)   jTextMod1.setText("6");
-        if (Integer.parseInt(strengthP) == 24 || Integer.parseInt(strengthP) == 25)   jTextMod1.setText("7");
-        if (Integer.parseInt(strengthP) == 26 || Integer.parseInt(strengthP) == 27)   jTextMod1.setText("8");
-        if (Integer.parseInt(strengthP) == 28 || Integer.parseInt(strengthP) == 29)   jTextMod1.setText("9");
-        if (Integer.parseInt(strengthP) == 30)   jTextMod1.setText("10");
+        switch (Integer.parseInt(strengthP)){
+        case 1:
+            jTextMod1.setText("-5");
+            break;
+        case 2:
+        case 3:
+            jTextMod1.setText("-4");
+            break;
+        case 4:
+        case 5:
+            jTextMod1.setText("-3");
+            break;
+        case 6:
+        case 7:
+            jTextMod1.setText("-2");
+            break;
+        case 8:
+        case 9:
+            jTextMod1.setText("-1");
+            break;
+        case 10:
+        case 11:
+            jTextMod1.setText("+0");
+            break;
+        case 12:
+        case 13:
+            jTextMod1.setText("+1");
+            break;
+        case 14:
+        case 15:
+            jTextMod1.setText("+2");
+            break;
+        case 16:
+        case 17:
+            jTextMod1.setText("+3");
+            break;
+        case 18:
+        case 19:
+            jTextMod1.setText("+4");
+            break;
+        case 20:
+        case 21:
+            jTextMod1.setText("+5");
+            break;
+        case 22:
+        case 23:
+            jTextMod1.setText("+6");
+            break;
+        case 24:
+        case 25:
+            jTextMod1.setText("+7");
+            break;
+        case 26:
+        case 27:
+            jTextMod1.setText("+8");
+            break;
+        case 28:
+        case 29:
+            jTextMod1.setText("+9");
+            break;
+        case 30:
+            jTextMod1.setText("+10");
+            break;
+        }
         
         //dexterity
-        if (Integer.parseInt(dexterityP) == 1)   jTextMod2.setText("-5");
-        if (Integer.parseInt(dexterityP) == 2 || Integer.parseInt(dexterityP) == 3)   jTextMod2.setText("-4");
-        if (Integer.parseInt(dexterityP) == 4 || Integer.parseInt(dexterityP) == 5)   jTextMod2.setText("-3");
-        if (Integer.parseInt(dexterityP) == 6 || Integer.parseInt(dexterityP) == 7)   jTextMod2.setText("-2");
-        if (Integer.parseInt(dexterityP) == 8 || Integer.parseInt(dexterityP) == 9)   jTextMod2.setText("-1");
-        if (Integer.parseInt(dexterityP) == 10 || Integer.parseInt(dexterityP) == 11)   jTextMod2.setText("0");
-        if (Integer.parseInt(dexterityP) == 12 || Integer.parseInt(dexterityP) == 13)   jTextMod2.setText("1");
-        if (Integer.parseInt(dexterityP) == 14 || Integer.parseInt(dexterityP) == 15)   jTextMod2.setText("2");
-        if (Integer.parseInt(dexterityP) == 16 || Integer.parseInt(dexterityP) == 17)   jTextMod2.setText("3");
-        if (Integer.parseInt(dexterityP) == 18 || Integer.parseInt(dexterityP) == 19)   jTextMod2.setText("4");
-        if (Integer.parseInt(dexterityP) == 20 || Integer.parseInt(dexterityP) == 21)   jTextMod2.setText("5");
-        if (Integer.parseInt(dexterityP) == 22 || Integer.parseInt(dexterityP) == 23)   jTextMod2.setText("6");
-        if (Integer.parseInt(dexterityP) == 24 || Integer.parseInt(dexterityP) == 25)   jTextMod2.setText("7");
-        if (Integer.parseInt(dexterityP) == 26 || Integer.parseInt(dexterityP) == 27)   jTextMod2.setText("8");
-        if (Integer.parseInt(dexterityP) == 28 || Integer.parseInt(dexterityP) == 29)   jTextMod2.setText("9");
-        if (Integer.parseInt(dexterityP) == 30)   jTextMod2.setText("10");
+        switch (Integer.parseInt(dexterityP)){
+        case 1:
+            jTextMod2.setText("-5");
+            break;
+        case 2:
+        case 3:
+            jTextMod2.setText("-4");
+            break;
+        case 4:
+        case 5:
+            jTextMod2.setText("-3");
+            break;
+        case 6:
+        case 7:
+            jTextMod2.setText("-2");
+            break;
+        case 8:
+        case 9:
+            jTextMod2.setText("-1");
+            break;
+        case 10:
+        case 11:
+            jTextMod2.setText("+0");
+            break;
+        case 12:
+        case 13:
+            jTextMod2.setText("+1");
+            break;
+        case 14:
+        case 15:
+            jTextMod2.setText("+2");
+            break;
+        case 16:
+        case 17:
+            jTextMod2.setText("+3");
+            break;
+        case 18:
+        case 19:
+            jTextMod2.setText("+4");
+            break;
+        case 20:
+        case 21:
+            jTextMod2.setText("+5");
+            break;
+        case 22:
+        case 23:
+            jTextMod2.setText("+6");
+            break;
+        case 24:
+        case 25:
+            jTextMod2.setText("+7");
+            break;
+        case 26:
+        case 27:
+            jTextMod2.setText("+8");
+            break;
+        case 28:
+        case 29:
+            jTextMod2.setText("+9");
+            break;
+        case 30:
+            jTextMod2.setText("+10");
+            break;
+        }
         
         //constitution
-        if (Integer.parseInt(constitutionP) == 1)   jTextMod3.setText("-5");
-        if (Integer.parseInt(constitutionP) == 2 || Integer.parseInt(constitutionP) == 3)   jTextMod3.setText("-4");
-        if (Integer.parseInt(constitutionP) == 4 || Integer.parseInt(constitutionP) == 5)   jTextMod3.setText("-3");
-        if (Integer.parseInt(constitutionP) == 6 || Integer.parseInt(constitutionP) == 7)   jTextMod3.setText("-2");
-        if (Integer.parseInt(constitutionP) == 8 || Integer.parseInt(constitutionP) == 9)   jTextMod3.setText("-1");
-        if (Integer.parseInt(constitutionP) == 10 || Integer.parseInt(constitutionP) == 11)   jTextMod3.setText("0");
-        if (Integer.parseInt(constitutionP) == 12 || Integer.parseInt(constitutionP) == 13)   jTextMod3.setText("1");
-        if (Integer.parseInt(constitutionP) == 14 || Integer.parseInt(constitutionP) == 15)   jTextMod3.setText("2");
-        if (Integer.parseInt(constitutionP) == 16 || Integer.parseInt(constitutionP) == 17)   jTextMod3.setText("3");
-        if (Integer.parseInt(constitutionP) == 18 || Integer.parseInt(constitutionP) == 19)   jTextMod3.setText("4");
-        if (Integer.parseInt(constitutionP) == 20 || Integer.parseInt(constitutionP) == 21)   jTextMod3.setText("5");
-        if (Integer.parseInt(constitutionP) == 22 || Integer.parseInt(constitutionP) == 23)   jTextMod3.setText("6");
-        if (Integer.parseInt(constitutionP) == 24 || Integer.parseInt(constitutionP) == 25)   jTextMod3.setText("7");
-        if (Integer.parseInt(constitutionP) == 26 || Integer.parseInt(constitutionP) == 27)   jTextMod3.setText("8");
-        if (Integer.parseInt(constitutionP) == 28 || Integer.parseInt(constitutionP) == 29)   jTextMod3.setText("9");
-        if (Integer.parseInt(constitutionP) == 30)   jTextMod3.setText("10");
+        switch (Integer.parseInt(constitutionP)){
+        case 1:
+            jTextMod3.setText("-5");
+            break;
+        case 2:
+        case 3:
+            jTextMod3.setText("-4");
+            break;
+        case 4:
+        case 5:
+            jTextMod3.setText("-3");
+            break;
+        case 6:
+        case 7:
+            jTextMod3.setText("-2");
+            break;
+        case 8:
+        case 9:
+            jTextMod3.setText("-1");
+            break;
+        case 10:
+        case 11:
+            jTextMod3.setText("+0");
+            break;
+        case 12:
+        case 13:
+            jTextMod3.setText("+1");
+            break;
+        case 14:
+        case 15:
+            jTextMod3.setText("+2");
+            break;
+        case 16:
+        case 17:
+            jTextMod3.setText("+3");
+            break;
+        case 18:
+        case 19:
+            jTextMod3.setText("+4");
+            break;
+        case 20:
+        case 21:
+            jTextMod3.setText("+5");
+            break;
+        case 22:
+        case 23:
+            jTextMod3.setText("+6");
+            break;
+        case 24:
+        case 25:
+            jTextMod3.setText("+7");
+            break;
+        case 26:
+        case 27:
+            jTextMod3.setText("+8");
+            break;
+        case 28:
+        case 29:
+            jTextMod3.setText("+9");
+            break;
+        case 30:
+            jTextMod3.setText("+10");
+            break;
+        }
+
         
         //intelligence
-        if (Integer.parseInt(intelligenceP) == 1)   jTextMod4.setText("-5");
-        if (Integer.parseInt(intelligenceP) == 2 || Integer.parseInt(intelligenceP) == 3)   jTextMod4.setText("-4");
-        if (Integer.parseInt(intelligenceP) == 4 || Integer.parseInt(intelligenceP) == 5)   jTextMod4.setText("-3");
-        if (Integer.parseInt(intelligenceP) == 6 || Integer.parseInt(intelligenceP) == 7)   jTextMod4.setText("-2");
-        if (Integer.parseInt(intelligenceP) == 8 || Integer.parseInt(intelligenceP) == 9)   jTextMod4.setText("-1");
-        if (Integer.parseInt(intelligenceP) == 10 || Integer.parseInt(intelligenceP) == 11)   jTextMod4.setText("0");
-        if (Integer.parseInt(intelligenceP) == 12 || Integer.parseInt(intelligenceP) == 13)   jTextMod4.setText("1");
-        if (Integer.parseInt(intelligenceP) == 14 || Integer.parseInt(intelligenceP) == 15)   jTextMod4.setText("2");
-        if (Integer.parseInt(intelligenceP) == 16 || Integer.parseInt(intelligenceP) == 17)   jTextMod4.setText("3");
-        if (Integer.parseInt(intelligenceP) == 18 || Integer.parseInt(intelligenceP) == 19)   jTextMod4.setText("4");
-        if (Integer.parseInt(intelligenceP) == 20 || Integer.parseInt(intelligenceP) == 21)   jTextMod4.setText("5");
-        if (Integer.parseInt(intelligenceP) == 22 || Integer.parseInt(intelligenceP) == 23)   jTextMod4.setText("6");
-        if (Integer.parseInt(intelligenceP) == 24 || Integer.parseInt(intelligenceP) == 25)   jTextMod4.setText("7");
-        if (Integer.parseInt(intelligenceP) == 26 || Integer.parseInt(intelligenceP) == 27)   jTextMod4.setText("8");
-        if (Integer.parseInt(intelligenceP) == 28 || Integer.parseInt(intelligenceP) == 29)   jTextMod4.setText("9");
-        if (Integer.parseInt(intelligenceP) == 30)   jTextMod4.setText("10");
+        switch (Integer.parseInt(intelligenceP)){
+        case 1:
+            jTextMod4.setText("-5");
+            break;
+        case 2:
+        case 3:
+            jTextMod4.setText("-4");
+            break;
+        case 4:
+        case 5:
+            jTextMod4.setText("-3");
+            break;
+        case 6:
+        case 7:
+            jTextMod4.setText("-2");
+            break;
+        case 8:
+        case 9:
+            jTextMod4.setText("-1");
+            break;
+        case 10:
+        case 11:
+            jTextMod4.setText("+0");
+            break;
+        case 12:
+        case 13:
+            jTextMod4.setText("+1");
+            break;
+        case 14:
+        case 15:
+            jTextMod4.setText("+2");
+            break;
+        case 16:
+        case 17:
+            jTextMod4.setText("+3");
+            break;
+        case 18:
+        case 19:
+            jTextMod4.setText("+4");
+            break;
+        case 20:
+        case 21:
+            jTextMod4.setText("+5");
+            break;
+        case 22:
+        case 23:
+            jTextMod4.setText("+6");
+            break;
+        case 24:
+        case 25:
+            jTextMod4.setText("+7");
+            break;
+        case 26:
+        case 27:
+            jTextMod4.setText("+8");
+            break;
+        case 28:
+        case 29:
+            jTextMod4.setText("+9");
+            break;
+        case 30:
+            jTextMod4.setText("+10");
+            break;
+        }
         
         //wisdom
-        if (Integer.parseInt(wisdomP) == 1)   jTextMod5.setText("-5");
-        if (Integer.parseInt(wisdomP) == 2 || Integer.parseInt(wisdomP) == 3)   jTextMod5.setText("-4");
-        if (Integer.parseInt(wisdomP) == 4 || Integer.parseInt(wisdomP) == 5)   jTextMod5.setText("-3");
-        if (Integer.parseInt(wisdomP) == 6 || Integer.parseInt(wisdomP) == 7)   jTextMod5.setText("-2");
-        if (Integer.parseInt(wisdomP) == 8 || Integer.parseInt(wisdomP) == 9)   jTextMod5.setText("-1");
-        if (Integer.parseInt(wisdomP) == 10 || Integer.parseInt(wisdomP) == 11)   jTextMod5.setText("0");
-        if (Integer.parseInt(wisdomP) == 12 || Integer.parseInt(wisdomP) == 13)   jTextMod5.setText("1");
-        if (Integer.parseInt(wisdomP) == 14 || Integer.parseInt(wisdomP) == 15)   jTextMod5.setText("2");
-        if (Integer.parseInt(wisdomP) == 16 || Integer.parseInt(wisdomP) == 17)   jTextMod5.setText("3");
-        if (Integer.parseInt(wisdomP) == 18 || Integer.parseInt(wisdomP) == 19)   jTextMod5.setText("4");
-        if (Integer.parseInt(wisdomP) == 20 || Integer.parseInt(wisdomP) == 21)   jTextMod5.setText("5");
-        if (Integer.parseInt(wisdomP) == 22 || Integer.parseInt(wisdomP) == 23)   jTextMod5.setText("6");
-        if (Integer.parseInt(wisdomP) == 24 || Integer.parseInt(wisdomP) == 25)   jTextMod5.setText("7");
-        if (Integer.parseInt(wisdomP) == 26 || Integer.parseInt(wisdomP) == 27)   jTextMod5.setText("8");
-        if (Integer.parseInt(wisdomP) == 28 || Integer.parseInt(wisdomP) == 29)   jTextMod5.setText("9");
-        if (Integer.parseInt(wisdomP) == 30)   jTextMod5.setText("10");
+        switch (Integer.parseInt(wisdomP)){
+        case 1:
+            jTextMod5.setText("-5");
+            break;
+        case 2:
+        case 3:
+            jTextMod5.setText("-4");
+            break;
+        case 4:
+        case 5:
+            jTextMod5.setText("-3");
+            break;
+        case 6:
+        case 7:
+            jTextMod5.setText("-2");
+            break;
+        case 8:
+        case 9:
+            jTextMod5.setText("-1");
+            break;
+        case 10:
+        case 11:
+            jTextMod5.setText("+0");
+            break;
+        case 12:
+        case 13:
+            jTextMod5.setText("+1");
+            break;
+        case 14:
+        case 15:
+            jTextMod5.setText("+2");
+            break;
+        case 16:
+        case 17:
+            jTextMod5.setText("+3");
+            break;
+        case 18:
+        case 19:
+            jTextMod5.setText("+4");
+            break;
+        case 20:
+        case 21:
+            jTextMod5.setText("+5");
+            break;
+        case 22:
+        case 23:
+            jTextMod5.setText("+6");
+            break;
+        case 24:
+        case 25:
+            jTextMod5.setText("+7");
+            break;
+        case 26:
+        case 27:
+            jTextMod5.setText("+8");
+            break;
+        case 28:
+        case 29:
+            jTextMod5.setText("+9");
+            break;
+        case 30:
+            jTextMod5.setText("+10");
+            break;
+        }
         
         //charisma
-        if (Integer.parseInt(charismaP) == 1)   jTextMod6.setText("-5");
-        if (Integer.parseInt(charismaP) == 2 || Integer.parseInt(charismaP) == 3)   jTextMod6.setText("-4");
-        if (Integer.parseInt(charismaP) == 4 || Integer.parseInt(charismaP) == 5)   jTextMod6.setText("-3");
-        if (Integer.parseInt(charismaP) == 6 || Integer.parseInt(charismaP) == 7)   jTextMod6.setText("-2");
-        if (Integer.parseInt(charismaP) == 8 || Integer.parseInt(charismaP) == 9)   jTextMod6.setText("-1");
-        if (Integer.parseInt(charismaP) == 10 || Integer.parseInt(charismaP) == 11)   jTextMod6.setText("0");
-        if (Integer.parseInt(charismaP) == 12 || Integer.parseInt(charismaP) == 13)   jTextMod6.setText("1");
-        if (Integer.parseInt(charismaP) == 14 || Integer.parseInt(charismaP) == 15)   jTextMod6.setText("2");
-        if (Integer.parseInt(charismaP) == 16 || Integer.parseInt(charismaP) == 17)   jTextMod6.setText("3");
-        if (Integer.parseInt(charismaP) == 18 || Integer.parseInt(charismaP) == 19)   jTextMod6.setText("4");
-        if (Integer.parseInt(charismaP) == 20 || Integer.parseInt(charismaP) == 21)   jTextMod6.setText("5");
-        if (Integer.parseInt(charismaP) == 22 || Integer.parseInt(charismaP) == 23)   jTextMod6.setText("6");
-        if (Integer.parseInt(charismaP) == 24 || Integer.parseInt(charismaP) == 25)   jTextMod6.setText("7");
-        if (Integer.parseInt(charismaP) == 26 || Integer.parseInt(charismaP) == 27)   jTextMod6.setText("8");
-        if (Integer.parseInt(charismaP) == 28 || Integer.parseInt(charismaP) == 29)   jTextMod6.setText("9");
-        if (Integer.parseInt(charismaP) == 30)   jTextMod6.setText("10");
+        switch (Integer.parseInt(charismaP)){
+        case 1:
+            jTextMod6.setText("-5");
+            break;
+        case 2:
+        case 3:
+            jTextMod6.setText("-4");
+            break;
+        case 4:
+        case 5:
+            jTextMod6.setText("-3");
+            break;
+        case 6:
+        case 7:
+            jTextMod6.setText("-2");
+            break;
+        case 8:
+        case 9:
+            jTextMod6.setText("-1");
+            break;
+        case 10:
+        case 11:
+            jTextMod6.setText("+0");
+            break;
+        case 12:
+        case 13:
+            jTextMod6.setText("+1");
+            break;
+        case 14:
+        case 15:
+            jTextMod6.setText("+2");
+            break;
+        case 16:
+        case 17:
+            jTextMod6.setText("+3");
+            break;
+        case 18:
+        case 19:
+            jTextMod6.setText("+4");
+            break;
+        case 20:
+        case 21:
+            jTextMod6.setText("+5");
+            break;
+        case 22:
+        case 23:
+            jTextMod6.setText("+6");
+            break;
+        case 24:
+        case 25:
+            jTextMod6.setText("+7");
+            break;
+        case 26:
+        case 27:
+            jTextMod6.setText("+8");
+            break;
+        case 28:
+        case 29:
+            jTextMod6.setText("+9");
+            break;
+        case 30:
+            jTextMod6.setText("+10");
+            break;
         
         //making sure all input is filled
         if (name.isEmpty() || race.isEmpty() || strengthP.isEmpty() || dexterityP.isEmpty() || constitutionP.isEmpty() || intelligenceP.isEmpty() || wisdomP.isEmpty() || charismaP.isEmpty() || 
