@@ -2,12 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package main;
+package javaapplication;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.Arrays;
 import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -55,7 +56,7 @@ public class Menu extends javax.swing.JFrame {
         javax.swing.JLabel jLabel8 = new javax.swing.JLabel();
         jTextName = new javax.swing.JTextField();
         javax.swing.JLabel jLabel9 = new javax.swing.JLabel();
-        jTextRace = new javax.swing.JTextField();
+        jTextRace = new javax.swing.JComboBox<>();
         javax.swing.JLabel jLabel10 = new javax.swing.JLabel();
         jTextScore1 = new javax.swing.JTextField();
         javax.swing.JLabel jLabel11 = new javax.swing.JLabel();
@@ -78,6 +79,7 @@ public class Menu extends javax.swing.JFrame {
         javax.swing.JButton btnClear = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
+        btnRndPts = new javax.swing.JButton();
         javax.swing.JButton btnDelete = new javax.swing.JButton();
         javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();
         tableCharacters = new javax.swing.JTable();
@@ -100,6 +102,7 @@ public class Menu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DnDCharacterCreation");
         setMinimumSize(new java.awt.Dimension(946, 700));
+        setPreferredSize(new java.awt.Dimension(946, 700));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
@@ -249,7 +252,7 @@ public class Menu extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/DnD_logo.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication/DnD_logo.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -265,7 +268,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(152, 152, 152)
                 .addComponent(jLabel4)
-                .addContainerGap(277, Short.MAX_VALUE))
+                .addContainerGap(325, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jp1Layout = new javax.swing.GroupLayout(jp1);
@@ -276,7 +279,9 @@ public class Menu extends javax.swing.JFrame {
         );
         jp1Layout.setVerticalGroup(
             jp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jp1Layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Home", jp1);
@@ -285,9 +290,10 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/group.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication/group.png"))); // NOI18N
         jLabel7.setText("Characters:");
 
+        jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "New Character:", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial Rounded MT Bold", 0, 18))); // NOI18N
         jPanel9.setOpaque(false);
 
         jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
@@ -303,7 +309,12 @@ public class Menu extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         jLabel9.setText("Race");
 
-        jTextRace.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jTextRace.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "High Elf", "Wood Elf", "Dark Elf", "Dragonborn", "Hill Dwarf", "Mountain Dwarf", "Lightfoot Halfling", "Stout Halfling", "Forest Gnome", "Rock Gnome", "Human", "Half-Elf", "Half-Orc", "Tiefling" }));
+        jTextRace.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextRaceActionPerformed(evt);
+            }
+        });
 
         jLabel10.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         jLabel10.setText("Strength");
@@ -364,7 +375,7 @@ public class Menu extends javax.swing.JFrame {
         jTextMod6.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
 
         btnAdd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        btnAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/add.png"))); // NOI18N
+        btnAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication/add.png"))); // NOI18N
         btnAdd.setText("Add");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -373,7 +384,7 @@ public class Menu extends javax.swing.JFrame {
         });
 
         btnClear.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        btnClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/clear.png"))); // NOI18N
+        btnClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication/clear.png"))); // NOI18N
         btnClear.setText("Clear");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -387,6 +398,14 @@ public class Menu extends javax.swing.JFrame {
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setText("(Modifiers)");
 
+        btnRndPts.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        btnRndPts.setText("Randomize Points");
+        btnRndPts.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRndPtsActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
@@ -394,20 +413,6 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextRace)
-                    .addComponent(jTextName)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel9Layout.createSequentialGroup()
@@ -431,14 +436,29 @@ public class Menu extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextMod5, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(btnAdd, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
-                                    .addComponent(jTextScore6))
+                                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btnAdd, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
+                                    .addComponent(jTextScore6, javax.swing.GroupLayout.Alignment.LEADING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextMod6, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(btnRndPts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTextName)
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jTextRace, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -497,15 +517,17 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextScore6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextMod6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAdd)
-                    .addComponent(btnClear))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnClear)
+                    .addComponent(btnAdd))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnRndPts)
+                .addContainerGap(118, Short.MAX_VALUE))
         );
 
         btnDelete.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/delete.png"))); // NOI18N
+        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication/delete.png"))); // NOI18N
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -547,7 +569,7 @@ public class Menu extends javax.swing.JFrame {
                             .addGroup(jPanel10Layout.createSequentialGroup()
                                 .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 680, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
@@ -583,7 +605,7 @@ public class Menu extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Elf:", "   High", "   Wood", "   Dark", "Dragonborn", "Dwarf:", "   Hill", "   Mountain", "Halfling:", "   Lightfoot", "   Stout", "Gnome:", "   Forest", "   Rock", "Human", "Half-Elf", "Half-Orc", "Tiefling" };
+            String[] strings = { "Elf:", "High", "Wood", "Dark", "Dragonborn", "Dwarf:", "Hill", "Mountain", "Halfling:", "Lightfoot", "Stout", "Gnome:", "Forest", "Rock", "Human", "Half-Elf", "Half-Orc", "Tiefling" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -603,7 +625,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(194, Short.MAX_VALUE))
+                .addContainerGap(242, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jp3Layout = new javax.swing.GroupLayout(jp3);
@@ -733,7 +755,7 @@ public class Menu extends javax.swing.JFrame {
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(266, Short.MAX_VALUE))
+                .addContainerGap(314, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jp4Layout = new javax.swing.GroupLayout(jp4);
@@ -759,7 +781,7 @@ public class Menu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 723, Short.MAX_VALUE)
         );
 
         pack();
@@ -843,7 +865,24 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         String name = jTextName.getText();
-        String race = jTextRace.getText();
+        
+        String race = "";
+        switch (jTextRace.getSelectedIndex()) {
+            case 0 -> race = "High Elf";
+            case 1 -> race = "Wood Elf";
+            case 2 -> race = "Dark Elf";
+            case 3 -> race = "Dragonborn";
+            case 4 -> race = "Hill Dwarf";
+            case 5 -> race = "Mountain Dwarf";
+            case 6 -> race = "Lightfoot Halfling";
+            case 7 -> race = "Stout Halfling";
+            case 8 -> race = "Forest Gnome";
+            case 9 -> race = "Rock Gnome";
+            case 10 -> race = "Human";
+            case 11 -> race = "Half-Elf";
+            case 12 -> race = "Half-Orc";
+            case 13 -> race = "Tiefling";
+        }
         String strengthP = jTextScore1.getText();
         String dexterityP = jTextScore2.getText();
         String constitutionP = jTextScore3.getText();
@@ -854,399 +893,120 @@ public class Menu extends javax.swing.JFrame {
         // setting the modifier values from the point inputs
         //strength
         switch (Integer.parseInt(strengthP)){
-        case 1:
-            jTextMod1.setText("-5");
-            break;
-        case 2:
-        case 3:
-            jTextMod1.setText("-4");
-            break;
-        case 4:
-        case 5:
-            jTextMod1.setText("-3");
-            break;
-        case 6:
-        case 7:
-            jTextMod1.setText("-2");
-            break;
-        case 8:
-        case 9:
-            jTextMod1.setText("-1");
-            break;
-        case 10:
-        case 11:
-            jTextMod1.setText("+0");
-            break;
-        case 12:
-        case 13:
-            jTextMod1.setText("+1");
-            break;
-        case 14:
-        case 15:
-            jTextMod1.setText("+2");
-            break;
-        case 16:
-        case 17:
-            jTextMod1.setText("+3");
-            break;
-        case 18:
-        case 19:
-            jTextMod1.setText("+4");
-            break;
-        case 20:
-        case 21:
-            jTextMod1.setText("+5");
-            break;
-        case 22:
-        case 23:
-            jTextMod1.setText("+6");
-            break;
-        case 24:
-        case 25:
-            jTextMod1.setText("+7");
-            break;
-        case 26:
-        case 27:
-            jTextMod1.setText("+8");
-            break;
-        case 28:
-        case 29:
-            jTextMod1.setText("+9");
-            break;
-        case 30:
-            jTextMod1.setText("+10");
-            break;
+        case 1 -> jTextMod1.setText("-5");
+        case 2, 3 -> jTextMod1.setText("-4");
+        case 4, 5 -> jTextMod1.setText("-3");
+        case 6, 7 -> jTextMod1.setText("-2");
+        case 8, 9 -> jTextMod1.setText("-1");
+        case 10, 11 -> jTextMod1.setText("+0");
+        case 12, 13 -> jTextMod1.setText("+1");
+        case 14, 15 -> jTextMod1.setText("+2");
+        case 16, 17 -> jTextMod1.setText("+3");
+        case 18, 19 -> jTextMod1.setText("+4");
+        case 20, 21 -> jTextMod1.setText("+5");
+        case 22, 23 -> jTextMod1.setText("+6");
+        case 24, 25 -> jTextMod1.setText("+7");
+        case 26, 27 -> jTextMod1.setText("+8");
+        case 28, 29 -> jTextMod1.setText("+9");
+        case 30 -> jTextMod1.setText("+10");
         }
         
         //dexterity
         switch (Integer.parseInt(dexterityP)){
-        case 1:
-            jTextMod2.setText("-5");
-            break;
-        case 2:
-        case 3:
-            jTextMod2.setText("-4");
-            break;
-        case 4:
-        case 5:
-            jTextMod2.setText("-3");
-            break;
-        case 6:
-        case 7:
-            jTextMod2.setText("-2");
-            break;
-        case 8:
-        case 9:
-            jTextMod2.setText("-1");
-            break;
-        case 10:
-        case 11:
-            jTextMod2.setText("+0");
-            break;
-        case 12:
-        case 13:
-            jTextMod2.setText("+1");
-            break;
-        case 14:
-        case 15:
-            jTextMod2.setText("+2");
-            break;
-        case 16:
-        case 17:
-            jTextMod2.setText("+3");
-            break;
-        case 18:
-        case 19:
-            jTextMod2.setText("+4");
-            break;
-        case 20:
-        case 21:
-            jTextMod2.setText("+5");
-            break;
-        case 22:
-        case 23:
-            jTextMod2.setText("+6");
-            break;
-        case 24:
-        case 25:
-            jTextMod2.setText("+7");
-            break;
-        case 26:
-        case 27:
-            jTextMod2.setText("+8");
-            break;
-        case 28:
-        case 29:
-            jTextMod2.setText("+9");
-            break;
-        case 30:
-            jTextMod2.setText("+10");
-            break;
+        case 1 -> jTextMod2.setText("-5");
+        case 2, 3 -> jTextMod2.setText("-4");
+        case 4, 5 -> jTextMod2.setText("-3");
+        case 6, 7 -> jTextMod2.setText("-2");
+        case 8, 9 -> jTextMod2.setText("-1");
+        case 10, 11 -> jTextMod2.setText("+0");
+        case 12, 13 -> jTextMod2.setText("+1");
+        case 14, 15 -> jTextMod2.setText("+2");
+        case 16, 17 -> jTextMod2.setText("+3");
+        case 18, 19 -> jTextMod2.setText("+4");
+        case 20, 21 -> jTextMod2.setText("+5");
+        case 22, 23 -> jTextMod2.setText("+6");
+        case 24, 25 -> jTextMod2.setText("+7");
+        case 26, 27 -> jTextMod2.setText("+8");
+        case 28, 29 -> jTextMod2.setText("+9");
+        case 30 -> jTextMod2.setText("+10");
         }
         
         //constitution
         switch (Integer.parseInt(constitutionP)){
-        case 1:
-            jTextMod3.setText("-5");
-            break;
-        case 2:
-        case 3:
-            jTextMod3.setText("-4");
-            break;
-        case 4:
-        case 5:
-            jTextMod3.setText("-3");
-            break;
-        case 6:
-        case 7:
-            jTextMod3.setText("-2");
-            break;
-        case 8:
-        case 9:
-            jTextMod3.setText("-1");
-            break;
-        case 10:
-        case 11:
-            jTextMod3.setText("+0");
-            break;
-        case 12:
-        case 13:
-            jTextMod3.setText("+1");
-            break;
-        case 14:
-        case 15:
-            jTextMod3.setText("+2");
-            break;
-        case 16:
-        case 17:
-            jTextMod3.setText("+3");
-            break;
-        case 18:
-        case 19:
-            jTextMod3.setText("+4");
-            break;
-        case 20:
-        case 21:
-            jTextMod3.setText("+5");
-            break;
-        case 22:
-        case 23:
-            jTextMod3.setText("+6");
-            break;
-        case 24:
-        case 25:
-            jTextMod3.setText("+7");
-            break;
-        case 26:
-        case 27:
-            jTextMod3.setText("+8");
-            break;
-        case 28:
-        case 29:
-            jTextMod3.setText("+9");
-            break;
-        case 30:
-            jTextMod3.setText("+10");
-            break;
-        }
-
-        
+        case 1 -> jTextMod3.setText("-5");
+        case 2, 3 -> jTextMod3.setText("-4");
+        case 4, 5 -> jTextMod3.setText("-3");
+        case 6, 7 -> jTextMod3.setText("-2");
+        case 8, 9 -> jTextMod3.setText("-1");
+        case 10, 11 -> jTextMod3.setText("+0");
+        case 12, 13 -> jTextMod3.setText("+1");
+        case 14, 15 -> jTextMod3.setText("+2");
+        case 16, 17 -> jTextMod3.setText("+3");
+        case 18, 19 -> jTextMod3.setText("+4");
+        case 20, 21 -> jTextMod3.setText("+5");
+        case 22, 23 -> jTextMod3.setText("+6");
+        case 24, 25 -> jTextMod3.setText("+7");
+        case 26, 27 -> jTextMod3.setText("+8");
+        case 28, 29 -> jTextMod3.setText("+9");
+        case 30 -> jTextMod3.setText("+10");
+        }        
         //intelligence
         switch (Integer.parseInt(intelligenceP)){
-        case 1:
-            jTextMod4.setText("-5");
-            break;
-        case 2:
-        case 3:
-            jTextMod4.setText("-4");
-            break;
-        case 4:
-        case 5:
-            jTextMod4.setText("-3");
-            break;
-        case 6:
-        case 7:
-            jTextMod4.setText("-2");
-            break;
-        case 8:
-        case 9:
-            jTextMod4.setText("-1");
-            break;
-        case 10:
-        case 11:
-            jTextMod4.setText("+0");
-            break;
-        case 12:
-        case 13:
-            jTextMod4.setText("+1");
-            break;
-        case 14:
-        case 15:
-            jTextMod4.setText("+2");
-            break;
-        case 16:
-        case 17:
-            jTextMod4.setText("+3");
-            break;
-        case 18:
-        case 19:
-            jTextMod4.setText("+4");
-            break;
-        case 20:
-        case 21:
-            jTextMod4.setText("+5");
-            break;
-        case 22:
-        case 23:
-            jTextMod4.setText("+6");
-            break;
-        case 24:
-        case 25:
-            jTextMod4.setText("+7");
-            break;
-        case 26:
-        case 27:
-            jTextMod4.setText("+8");
-            break;
-        case 28:
-        case 29:
-            jTextMod4.setText("+9");
-            break;
-        case 30:
-            jTextMod4.setText("+10");
-            break;
-        }
-        
+        case 1 -> jTextMod4.setText("-5");
+        case 2, 3 -> jTextMod4.setText("-4");
+        case 4, 5 -> jTextMod4.setText("-3");
+        case 6, 7 -> jTextMod4.setText("-2");
+        case 8, 9 -> jTextMod4.setText("-1");
+        case 10, 11 -> jTextMod4.setText("+0");
+        case 12, 13 -> jTextMod4.setText("+1");
+        case 14, 15 -> jTextMod4.setText("+2");
+        case 16, 17 -> jTextMod4.setText("+3");
+        case 18, 19 -> jTextMod4.setText("+4");
+        case 20, 21 -> jTextMod4.setText("+5");
+        case 22, 23 -> jTextMod4.setText("+6");
+        case 24, 25 -> jTextMod4.setText("+7");
+        case 26, 27 -> jTextMod4.setText("+8");
+        case 28, 29 -> jTextMod4.setText("+9");
+        case 30 -> jTextMod4.setText("+10");
+        }        
         //wisdom
         switch (Integer.parseInt(wisdomP)){
-        case 1:
-            jTextMod5.setText("-5");
-            break;
-        case 2:
-        case 3:
-            jTextMod5.setText("-4");
-            break;
-        case 4:
-        case 5:
-            jTextMod5.setText("-3");
-            break;
-        case 6:
-        case 7:
-            jTextMod5.setText("-2");
-            break;
-        case 8:
-        case 9:
-            jTextMod5.setText("-1");
-            break;
-        case 10:
-        case 11:
-            jTextMod5.setText("+0");
-            break;
-        case 12:
-        case 13:
-            jTextMod5.setText("+1");
-            break;
-        case 14:
-        case 15:
-            jTextMod5.setText("+2");
-            break;
-        case 16:
-        case 17:
-            jTextMod5.setText("+3");
-            break;
-        case 18:
-        case 19:
-            jTextMod5.setText("+4");
-            break;
-        case 20:
-        case 21:
-            jTextMod5.setText("+5");
-            break;
-        case 22:
-        case 23:
-            jTextMod5.setText("+6");
-            break;
-        case 24:
-        case 25:
-            jTextMod5.setText("+7");
-            break;
-        case 26:
-        case 27:
-            jTextMod5.setText("+8");
-            break;
-        case 28:
-        case 29:
-            jTextMod5.setText("+9");
-            break;
-        case 30:
-            jTextMod5.setText("+10");
-            break;
-        }
-        
+        case 1 -> jTextMod5.setText("-5");
+        case 2, 3 -> jTextMod5.setText("-4");
+        case 4, 5 -> jTextMod5.setText("-3");
+        case 6, 7 -> jTextMod5.setText("-2");
+        case 8, 9 -> jTextMod5.setText("-1");
+        case 10, 11 -> jTextMod5.setText("+0");
+        case 12, 13 -> jTextMod5.setText("+1");
+        case 14, 15 -> jTextMod5.setText("+2");
+        case 16, 17 -> jTextMod5.setText("+3");
+        case 18, 19 -> jTextMod5.setText("+4");
+        case 20, 21 -> jTextMod5.setText("+5");
+        case 22, 23 -> jTextMod5.setText("+6");
+        case 24, 25 -> jTextMod5.setText("+7");
+        case 26, 27 -> jTextMod5.setText("+8");
+        case 28, 29 -> jTextMod5.setText("+9");
+        case 30 -> jTextMod5.setText("+10");
+        }        
         //charisma
         switch (Integer.parseInt(charismaP)){
-        case 1:
-            jTextMod6.setText("-5");
-            break;
-        case 2:
-        case 3:
-            jTextMod6.setText("-4");
-            break;
-        case 4:
-        case 5:
-            jTextMod6.setText("-3");
-            break;
-        case 6:
-        case 7:
-            jTextMod6.setText("-2");
-            break;
-        case 8:
-        case 9:
-            jTextMod6.setText("-1");
-            break;
-        case 10:
-        case 11:
-            jTextMod6.setText("+0");
-            break;
-        case 12:
-        case 13:
-            jTextMod6.setText("+1");
-            break;
-        case 14:
-        case 15:
-            jTextMod6.setText("+2");
-            break;
-        case 16:
-        case 17:
-            jTextMod6.setText("+3");
-            break;
-        case 18:
-        case 19:
-            jTextMod6.setText("+4");
-            break;
-        case 20:
-        case 21:
-            jTextMod6.setText("+5");
-            break;
-        case 22:
-        case 23:
-            jTextMod6.setText("+6");
-            break;
-        case 24:
-        case 25:
-            jTextMod6.setText("+7");
-            break;
-        case 26:
-        case 27:
-            jTextMod6.setText("+8");
-            break;
-        case 28:
-        case 29:
-            jTextMod6.setText("+9");
-            break;
-        case 30:
-            jTextMod6.setText("+10");
-            break;
+        case 1 -> jTextMod6.setText("-5");
+        case 2, 3 -> jTextMod6.setText("-4");
+        case 4, 5 -> jTextMod6.setText("-3");
+        case 6, 7 -> jTextMod6.setText("-2");
+        case 8, 9 -> jTextMod6.setText("-1");
+        case 10, 11 -> jTextMod6.setText("+0");
+        case 12, 13 -> jTextMod6.setText("+1");
+        case 14, 15 -> jTextMod6.setText("+2");
+        case 16, 17 -> jTextMod6.setText("+3");
+        case 18, 19 -> jTextMod6.setText("+4");
+        case 20, 21 -> jTextMod6.setText("+5");
+        case 22, 23 -> jTextMod6.setText("+6");
+        case 24, 25 -> jTextMod6.setText("+7");
+        case 26, 27 -> jTextMod6.setText("+8");
+        case 28, 29 -> jTextMod6.setText("+9");
+        case 30 -> jTextMod6.setText("+10");
+        }
         
         //making sure all input is filled
         if (name.isEmpty() || race.isEmpty() || strengthP.isEmpty() || dexterityP.isEmpty() || constitutionP.isEmpty() || intelligenceP.isEmpty() || wisdomP.isEmpty() || charismaP.isEmpty() || 
@@ -1265,7 +1025,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         jTextName.setText("");
-        jTextRace.setText("");
+        jTextRace.setSelectedIndex(0);
         jTextScore1.setText("");
         jTextScore2.setText("");
         jTextScore3.setText("");
@@ -1330,7 +1090,70 @@ public class Menu extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_formWindowOpened
 
+    private void btnRndPtsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRndPtsActionPerformed
+        jTextScore1.setText(Integer.toString(randomRoll()));
+        jTextScore2.setText(Integer.toString(randomRoll()));
+        jTextScore3.setText(Integer.toString(randomRoll()));
+        jTextScore4.setText(Integer.toString(randomRoll()));
+        jTextScore5.setText(Integer.toString(randomRoll()));
+        jTextScore6.setText(Integer.toString(randomRoll()));
+    }//GEN-LAST:event_btnRndPtsActionPerformed
+
+    private void jTextRaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRaceActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextRaceActionPerformed
+
+    public int randomRoll() {
+        int[] tempArray = new int[4];
+        int total;
+        int diceRole;
+        
+        for(int j=0; j<tempArray.length; j++){
+                diceRole = 1 +(int) (Math.random() * 6);
+                tempArray[j] = diceRole;
+            }
+        Arrays.sort(tempArray);
+        total = tempArray[1] + tempArray[2] + tempArray[3];
+        return total;
+    }
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Menu().setVisible(true);
+            }
+        });
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnRndPts;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -1366,7 +1189,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField jTextMod5;
     private javax.swing.JTextField jTextMod6;
     private javax.swing.JTextField jTextName;
-    private javax.swing.JTextField jTextRace;
+    private javax.swing.JComboBox<String> jTextRace;
     private javax.swing.JTextField jTextScore1;
     private javax.swing.JTextField jTextScore2;
     private javax.swing.JTextField jTextScore3;
