@@ -1,0 +1,107 @@
+{
+	"races": [
+		{
+			"name": "halfling",
+			"modifiers": {
+				"strength;": 0,
+				"dexterity": 2,
+				"constitution": 0,
+				"intelligence": 0,
+				"wisdom": 0,
+				"charisma": 0
+			},
+			"speed": 25,
+			"size": "small",
+			"language": [
+				"common",
+				"halfling"
+			],
+			"trait": [
+				"halfling_nimblness"
+			],
+			"subtrace": [
+				{
+					"name": "lightfoot",
+					"modifiers": {
+						"strength;": 0,
+						"dexterity": 0,
+						"constitution": 0,
+						"intelligence": 0,
+						"wisdom": 0,
+						"charisma": 1
+					},
+					"trait": [
+						"naturally_stealthy"
+					]
+				},
+				{
+					"name": "stout",
+					"modifiers": {
+						"strength;": 0,
+						"dexterity": 0,
+						"constitution": 1,
+						"intelligence": 0,
+						"wisdom": 0,
+						"charisma": 0
+					},
+					"trait": [
+						"stout_resilience"
+					]
+				}
+			]
+		},
+		{
+			"name": "gnome",
+			"modifiers": {
+				"strength;": 0,
+				"dexterity": 0,
+				"constitution": 0,
+				"intelligence": 2,
+				"wisdom": 0,
+				"charisma": 0
+			},
+			"speed": 25,
+			"size": "small",
+			"language": [
+				"common",
+				"gnomish"
+			],
+			"trait": [
+				"darkvision",
+				"gnome_cunning"
+			],
+			"subtrace": [
+				{
+					"name": "forest",
+					"modifiers": {
+						"strength;": 0,
+						"dexterity": 1,
+						"constitution": 0,
+						"intelligence": 0,
+						"wisdom": 0,
+						"charisma": 0
+					},
+					"trait": [
+						"natural_illusionist",
+						"speak_with_small_beasts"
+					]
+				},
+				{
+					"name": "rock",
+					"modifiers": {
+						"strength;": 0,
+						"dexterity": 0,
+						"constitution": 1,
+						"intelligence": 0,
+						"wisdom": 0,
+						"charisma": 0
+					},
+					"trait": [
+						"articicers_lore",
+						"tinker"
+					]
+				}
+			]
+		}
+	]
+}

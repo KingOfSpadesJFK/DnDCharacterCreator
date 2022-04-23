@@ -8,9 +8,15 @@ import java.util.*;
 import java.util.Random;
 
 public class CharacterBuild {
+    public enum Race {
+        HALFLING,
+        GNOME
+    };
 
-    Random rand = new Random();
-    int[] statArray = new int[6];
+    private Random rand = new Random();
+    private int[] statArray = new int[6];
+
+    private String name;
    
     public int[] rollDice(){
         //sets up a temp array to hold dice rolls to be sorted
