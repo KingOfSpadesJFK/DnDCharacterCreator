@@ -7,7 +7,7 @@ package main;
 import java.util.*;
 import java.util.Random;
 
-public class CharacterBuild{
+public class CharacterBuild {
 
     Random rand = new Random();
     int[] statArray = new int[6];
