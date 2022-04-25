@@ -17,6 +17,7 @@ public class DnDCharacterCreator {
 
     public static void main(String[] args)
     {
+        runMenu();
         // sets up a scanner to take user inputw
         Scanner input = new Scanner(System.in);
         CharacterBuild testBuild = new CharacterBuild();
