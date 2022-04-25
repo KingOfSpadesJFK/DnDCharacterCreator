@@ -895,7 +895,7 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }                                         
 
-    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {                                       
         String name = jTextName.getText();
         yourName = name;
         
@@ -916,14 +916,98 @@ public class Menu extends javax.swing.JFrame {
             case 12 -> race = "Half-Orc";
             case 13 -> race = "Tiefling";
         }
+        
+        
+        
+        /*
+        High Elf = 0
+        Wood Elf = 1
+        Dark Elf = 2
+        Dragonborn = 3
+        Hill Dwarf = 4
+        Mountain Dwarf = 5
+        Lightfoot Halfling = 6
+        Stout Halfling = 7
+        Forest Gnome = 8
+        Rock Gnome = 9
+        Human = 10
+        Half-Elf = 11
+        Half-Orc = 12
+        Tiefling = 13
+        */
+        
         String strengthP = jTextScore1.getText();
         String dexterityP = jTextScore2.getText();
         String constitutionP = jTextScore3.getText();
         String intelligenceP = jTextScore4.getText();
         String wisdomP = jTextScore5.getText();
         String charismaP = jTextScore6.getText();
-        
         //skillP = the text box name, not the int variable name
+        
+        
+        strPt = Integer.parseInt(strengthP);
+        dexPt = Integer.parseInt(dexterityP);
+        conPt = Integer.parseInt(constitutionP);
+        intPt = Integer.parseInt(intelligenceP);
+        wisPt = Integer.parseInt(wisdomP);
+        chaPt = Integer.parseInt(charismaP);
+        
+        switch (jTextRace.getSelectedIndex()) {
+            case 0 -> {
+                dexPt += 2; intPt += 1;
+            }
+            case 1 -> {
+                dexPt += 2; wisPt += 1;
+            }
+            case 2 -> {
+                dexPt += 2; chaPt += 1;
+            }
+            case 3 -> {
+                strPt += 2; chaPt += 1;
+            }
+            case 4 -> {
+                conPt += 2; wisPt += 1;
+            }
+            case 5 -> { 
+                strPt += 2; conPt += 2;
+            }
+            case 6 -> { 
+                dexPt += 2; chaPt += 1;
+            }
+            case 7 -> { 
+                conPt += 1;
+            }
+            case 8 -> {
+                dexPt += 1; intPt += 2;
+            }
+            case 9 -> { 
+                conPt += 2; intPt += 1;
+            }
+            case 10 -> {
+                strPt += 1; dexPt += 1; conPt += 1; intPt += 1; wisPt += 1; chaPt += 1;
+            }
+            case 11 -> {
+                dexPt += 1; //
+                intPt += 1; //
+                chaPt += 2;
+            }
+            case 12 -> { 
+                strPt += 2; conPt += 1;
+            }
+            case 13 -> {
+                chaPt += 2; intPt += 1;
+            }
+        }
+        
+        //modifying the Point numbers done - now set the text boxes to the updated values
+        jTextScore1.setText(Integer.toString(strPt));
+        jTextScore2.setText(Integer.toString(dexPt));
+        jTextScore3.setText(Integer.toString(conPt));
+        jTextScore4.setText(Integer.toString(intPt));
+        jTextScore5.setText(Integer.toString(wisPt));
+        jTextScore6.setText(Integer.toString(chaPt));
+        
+        
         
         // setting the modifier values from the point inputs
         //strength
@@ -1050,66 +1134,6 @@ public class Menu extends javax.swing.JFrame {
         
         
         
-        /*
-        High Elf = 0
-        Wood Elf = 1
-        Dark Elf = 2
-        Dragonborn = 3
-        Hill Dwarf = 4
-        Mountain Dwarf = 5
-        Lightfoot Halfling = 6
-        Stout Halfling = 7
-        Forest Gnome = 8
-        Rock Gnome = 9
-        Human = 10
-        Half-Elf = 11
-        Half-Orc = 12
-        Tiefling = 13
-        */
-        switch (jTextRace.getSelectedIndex()) {
-            case 0 -> {
-                dexMd += 2; intMd += 1;
-            }
-            case 1 -> {
-                dexMd += 2; wisMd += 1;
-            }
-            case 2 -> {
-                dexMd += 2; chaMd += 1;
-            }
-            case 3 -> {
-                strMd += 2; chaMd += 1;
-            }
-            case 4 -> {
-                conMd += 2; wisMd += 1;
-            }
-            case 5 -> { 
-                strMd += 2; conMd += 2;
-            }
-            case 6 -> { 
-                dexMd += 2; chaMd += 1;
-            }
-            case 7 -> { 
-                conMd += 1;
-            }
-            case 8 -> {
-                dexMd += 1; intMd += 2;
-            }
-            case 9 -> { 
-                conMd += 2; intMd += 1;
-            }
-            case 10 -> {
-                strMd += 1; dexMd += 1; conMd += 1; intMd += 1; wisMd += 1; chaMd += 1;
-            }
-            case 11 -> {
-                dexMd += 1; intMd += 1; chaMd += 2;
-            }
-            case 12 -> { 
-                strMd += 2; conMd += 1;
-            }
-            case 13 -> {
-                chaMd += 2; intMd += 1;
-            }
-        }
         
         
         //setting all of the modifier texts to the corresponding value. AFTER doing the racial modifiers
@@ -1133,7 +1157,7 @@ public class Menu extends javax.swing.JFrame {
             DefaultTableModel model = (DefaultTableModel) tableCharacters.getModel();
             model.addRow(new Object[]{name, race, strengthP, dexterityP, constitutionP, intelligenceP, wisdomP, charismaP});
         }
-    }                                      
+    }  
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {                                         
         yourName = "";
