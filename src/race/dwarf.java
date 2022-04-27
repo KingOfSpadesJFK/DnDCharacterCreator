@@ -1,4 +1,4 @@
-public class Dwarf extends GameCharacter {
+public class Dwarf  {
 
 	class AbilityScoreIncrease {
 		public AbilityScoreIncrease(String ability, int scoreIncrease) {
