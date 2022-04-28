@@ -1,6 +1,6 @@
 package race;
 
-import main.GameCharacter;
+import main.GameCharacter.Language;
 import main.GameCharacter.Size;
 
 public abstract class Race 
@@ -18,6 +18,9 @@ public abstract class Race
 	private int charisma;
 
     private Size size;
+    private Language[] languages;
+    private int speed;
+    private String[] traits;
 
     public Race(String race, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma) {
         this.raceName = race;
@@ -58,6 +61,22 @@ public abstract class Race
         return charisma;
     }
 
+    public Size getSize() {
+        return size;
+    }
+
+    public Language[] getLanguages() {
+        return languages;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public String[] getTraits() {
+        return traits;
+    }
+
     public void setStrength(int i) {
         strength = i;
     }
@@ -80,5 +99,21 @@ public abstract class Race
 
     public void setCharisma(int i) {
         charisma = i;
+    }
+
+    public void setSize(Size s) {
+        size = s;
+    }
+
+    public void setLanguages(Language[] l) {
+        languages = l;
+    }
+
+    public void setSpeed(int i) {
+        speed = i;
+    }
+
+    public void setTraits(String[] s) {
+        traits = s;
     }
 }

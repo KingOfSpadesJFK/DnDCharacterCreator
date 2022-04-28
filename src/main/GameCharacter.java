@@ -1,8 +1,9 @@
 package main;
 
+import java.util.ArrayList;
 import race.Race;
 
-public abstract class GameCharacter 
+public class GameCharacter 
 {
     public enum Size {
 		TINY,
@@ -19,11 +20,11 @@ public abstract class GameCharacter
 		HALFLING
 	};
 
-	private String charName;                 //Character name
-	private Race race;
-	private String className;                //Class type i.e.: Fighter etc. 
+	private String charName;                // Character name
+	private Race race;						// Race (Human, dwarf, elf, etc.)
+	private String className;               // Class type i.e.: Fighter etc. 
 	private Size size;
-	private Language language;
+	private ArrayList<Language> languages;
 
 	private int strength;
 	private int dexterity;
