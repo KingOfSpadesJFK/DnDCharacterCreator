@@ -2,7 +2,7 @@ package main;
 
 import race.Race;
 
-public abstract class GameCharacter 
+public abstract class GameCharacter
 {
     public enum Size {
 		TINY,
@@ -15,13 +15,26 @@ public abstract class GameCharacter
 
 	public enum Language {
 		COMMON,
-		GNOMISH,
-		HALFLING
+    DWARVISH,
+    ELVISH,
+    GIANT,
+    GNOMISH,
+    GOBLIN,
+		HALFLING,
+    ORC,
+    ABYSSAL,
+    CELESTIAL,
+    DEEPSPEECH,
+    DRACONIC,
+    INFERNAL,
+    PRIMORDIAL,
+    SYLVAN,
+    UNDERCOMMON
 	};
 
 	private String charName;                 //Character name
 	private Race race;
-	private String className;                //Class type i.e.: Fighter etc. 
+	private String className;                //Class type i.e.: Fighter etc.
 	private Size size;
 	private Language language;
 
