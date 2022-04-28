@@ -1,36 +1,84 @@
 package race;
 
-public abstract class Race {
-    
+import main.GameCharacter;
+import main.GameCharacter.Size;
+
+public abstract class Race 
+{    
     private String raceName;
-    private String charName;
-    private int[] stats = new int[6];
 
-    public Race(String name, String race, int[] stats) {
-        this.charName = name;
+    // These are just race modifiers
+    // These should be added onto the character stats
+    // Store 0 if there is no race modifier
+	private int strength;
+	private int dexterity;
+	private int constitution;
+	private int intelligence;
+	private int wisdom;
+	private int charisma;
+
+    private Size size;
+
+    public Race(String race, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma) {
         this.raceName = race;
-        this.stats = statAdjust(stats);
-    }
 
-    public abstract int[] statAdjust(int[] stats);
+        this.strength = strength;
+        this.dexterity = dexterity;
+        this.constitution = constitution;
+        this.intelligence = intelligence;
+        this.wisdom = wisdom;
+        this.charisma = charisma;
+    }
 
     public String getRaceName() {
         return raceName;
     }
 
-    public String getChar() {
-        return charName;
+    public int getStrength() {
+        return strength;
     }
 
-    public int[] getStats() {
-        return stats;
+    public int getDexterity() {
+        return dexterity;
     }
 
-    public void setName(String name) {
-        this.charName = name;
+    public int getConstitution() {
+        return constitution;
     }
 
-    public void setStats(int[] stats) {
-        this.stats = statAdjust(stats);
+    public int getIntelligence() {
+        return intelligence;
+    }
+
+    public int getWisdom() {
+        return wisdom;
+    }
+
+    public int getCharisma() {
+        return charisma;
+    }
+
+    public void setStrength(int i) {
+        strength = i;
+    }
+
+    public void setDexterity(int i) {
+        dexterity = i;
+    }
+
+    public void setConstitution(int i) {
+        constitution = i;
+    }
+
+    public void setIntelligence(int i) {
+        intelligence = i;
+    }
+
+    public void setWisdom(int i) {
+        wisdom = i;
+    }
+
+    public void setCharisma(int i) {
+        charisma = i;
     }
 }

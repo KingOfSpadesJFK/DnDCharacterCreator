@@ -2,16 +2,9 @@ package race;
 
 public class Tiefling extends Race {
     
-    public static String CLASS_NAME = "Tiefling";
+    public final static String CLASS_NAME = "Tiefling";
 
-    public Tiefling(String name, int[] stats) {
-        super(name, CLASS_NAME, stats);
-    }
-
-    public int[] statAdjust(int[] stats) 
-    {
-        stats[3] += 1;
-        stats[5] += 2;
-        return stats;
+    public Tiefling(int[] stats) {
+        super(CLASS_NAME, 0, 0, 0, 1, 0, 1);
     }
 }

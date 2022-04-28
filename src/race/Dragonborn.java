@@ -1,7 +1,12 @@
-// Kyle Garcia
-public class Dragonborn{
+/*
+* @author Kyle Garcia
+*/
+package race;
+
+public class Dragonborn
+{
       
-   String raceName = "Dragonborn";  //Race name
+   private static String RACE_NAME = "Dragonborn";  //Race name
    String charName;                 //Character name
    String className;                //Class type i.e.: Fighter etc. 
    String color; 

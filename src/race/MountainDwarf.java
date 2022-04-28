@@ -1,3 +1,5 @@
+package race;
+
 public class MountainDwarf extends Dwarf{
 	int Age;
 	int Alignment;

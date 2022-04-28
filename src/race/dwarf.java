@@ -1,22 +1,15 @@
-public class Dwarf  {
+package race;
 
-	class AbilityScoreIncrease {
-		public AbilityScoreIncrease(String ability, int scoreIncrease) {
-			this.ability = ability;
-			this.scoreIncrease = scoreIncrease;
-		}
+public class Dwarf extends Race 
+{
 
-		String ability;
-		int scoreIncrease;
-	}
-
-	AbilityScoreIncrease abilityScoreIncrease;
+	public final static String RACE_NAME = "Dwarf";
 	String Size;
 	int Speed;
 	String[] Language;
 	
 	public Dwarf() {
-		abilityScoreIncrease = new AbilityScoreIncrease("Constitution", 2);
+		super(RACE_NAME, 0, 0, 1, 0, 0, 0);
 	}
 
 }

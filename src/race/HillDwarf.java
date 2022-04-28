@@ -1,3 +1,4 @@
+package race;
 
 public class HillDwarf extends Dwarf{
 	int Age;
