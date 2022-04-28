@@ -13,6 +13,8 @@ import java.util.Scanner;
  */
 public class DnDCharacterCreator {
 
+    public static int ABILITY_SCORE_COUNT = 6;      // 6 ability scores: Strength, dexterity, constitution, intelligence, wisdom, charisma
+
     private static Menu menu;
 
     public static void main(String[] args)
