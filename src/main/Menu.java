@@ -146,6 +146,7 @@ public class Menu extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(151, 102, 0));
 
+        jPanel4.setBackground(new java.awt.Color(153, 153, 153));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
@@ -938,18 +939,34 @@ public class Menu extends javax.swing.JFrame {
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
         jTabbedPane1.setSelectedIndex(0);
+        jPanel4.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel5.setBackground(new java.awt.Color(242,242,242));
+        jPanel6.setBackground(new java.awt.Color(242,242,242));
+        jPanel8.setBackground(new java.awt.Color(242,242,242));       
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
         jTabbedPane1.setSelectedIndex(1);
+        jPanel4.setBackground(new java.awt.Color(242,242,242));
+        jPanel5.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel6.setBackground(new java.awt.Color(242,242,242));
+        jPanel8.setBackground(new java.awt.Color(242,242,242));   
     }//GEN-LAST:event_jPanel5MouseClicked
 
     private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
         jTabbedPane1.setSelectedIndex(2);
+        jPanel4.setBackground(new java.awt.Color(242,242,242));
+        jPanel5.setBackground(new java.awt.Color(242,242,242));
+        jPanel6.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel8.setBackground(new java.awt.Color(242,242,242)); 
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
         jTabbedPane1.setSelectedIndex(3);
+        jPanel4.setBackground(new java.awt.Color(242,242,242));
+        jPanel5.setBackground(new java.awt.Color(242,242,242));
+        jPanel6.setBackground(new java.awt.Color(242,242,242));
+        jPanel8.setBackground(new java.awt.Color(153, 153, 153)); 
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
