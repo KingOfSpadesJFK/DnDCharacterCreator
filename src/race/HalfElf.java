@@ -9,6 +9,7 @@ public class HalfElf extends Race {
     public HalfElf(int[] stats) {
         super(RACE_NAME, 0, 0, 0, 0, 0, 2);
 
+        // Replace this with a UI setting
         Random rand = new Random();
         for (int i = 0; i < 2; i++) {
             int j = rand.nextInt(6);
