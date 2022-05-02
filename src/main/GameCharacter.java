@@ -16,8 +16,21 @@ public class GameCharacter
 
 	public enum Language {
 		COMMON,
-		GNOMISH,
-		HALFLING
+    DWARVISH,
+    ELVISH,
+    GIANT,
+    GNOMISH,
+    GOBLIN,
+		HALFLING,
+    ORC,
+    ABYSSAL,
+    CELESTIAL,
+    DEEPSPEECH,
+    DRACONIC,
+    INFERNAL,
+    PRIMORDIAL,
+    SYLVAN,
+    UNDERCOMMON
 	};
 
 	private String charName;                // Character name

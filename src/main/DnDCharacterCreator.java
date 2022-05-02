@@ -21,7 +21,7 @@ public class DnDCharacterCreator {
     {
         runMenu();
         // sets up a scanner to take user inputw
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         CharacterBuild testBuild = new CharacterBuild();
 
         System.out.println("""
@@ -47,7 +47,7 @@ public class DnDCharacterCreator {
                 System.out.println("Exiting...");
                 System.exit(0);
             }
-        }
+        }*/
     }
 
     /**
@@ -56,12 +56,12 @@ public class DnDCharacterCreator {
     private static void runMenu() {
         // TODO code application logic here
         menu = new Menu();
-        
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 menu.setVisible(true);
             }
         });
     }
-    
+
 }

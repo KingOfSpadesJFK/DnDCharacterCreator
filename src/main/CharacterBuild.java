@@ -75,12 +75,4 @@ public class CharacterBuild {
         return statArray;
     }
 
-    public void modValue(){
-        //
-        /*switch(){
-        case "" ->{
-        //
-        }
-        }*/
-    }
 }
