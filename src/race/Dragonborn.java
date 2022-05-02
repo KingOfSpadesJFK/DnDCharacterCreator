@@ -1,55 +1,55 @@
 /*
-* @author Kyle Garcia
+* @author Kyle Garcia, Miguel Lima
 */
 package race;
 
-public class Dragonborn
+import main.GameCharacter.Language;
+import main.GameCharacter.Size;
+
+public class Dragonborn extends Race
 {
-      
-   private static String RACE_NAME = "Dragonborn";  //Race name
-   String charName;                 //Character name
-   String className;                //Class type i.e.: Fighter etc. 
-   String color; 
-   String damageType;    
+   public enum DragonType
+   {
+      BLACK,
+      BLUE,
+      BRASS,
+      BRONZE,
+      COPPER,
+      GOLD,
+      GREEN,
+      RED,
+      SILVER,
+      WHITE
+   };
 
-   class AbilityScoreIncrease {
-      public AbilityScoreIncrease(String ability, int scoreIncrease) {
-         this.ability = ability;
-         this.scoreIncrease = scoreIncrease;
-      }
-      
-      String ability;
-      int scoreIncrease;   
-   }
-   
-   AbilityScoreIncrease abilityScoreIncrease;
-   String size;
-   int speed;
-   String[] Language;
-   
-   
-   public String getCharName(){
-      return charName;
-   }
-   public void setCharName(String name){
-      this.charName = name;   
-   } 
-   
-   public String getClassName(){
-      return className;
-   }
-   public void setClassName(String name){
-      this.className = name;
-   }
-      
-   public static void main(String[] args){
-      Dragonborn dragon = new Dragonborn();
-      dragon.setClassName("Fighter");
-      dragon.setCharName("Dragon Guy");
-      System.out.println("Name:" + dragon.getCharName() + ", Class:" + dragon.getClassName());
-      
-      
+   private static final String RACE_NAME = "Dragonborn";  //Race name
+   private static final String[] traits = {
+     "Draconic Ancestory",
+     "Breath Weapon",
+     "Damage Resistance"
+   };
+   private static final Language[] languages = {
+       Language.COMMON,
+       Language.DRACONIC
+   };
 
+   private DragonType dragon;
       
+   public Dragonborn(DragonType dragon) {
+      super(RACE_NAME, 2, 0, 0, 0, 0, 1);
+      this.dragon = dragon;
+      setTraits(traits);
+      setLanguages(languages);
+      setSize(Size.MEDIUM);
+      setSpeed(30);
+   }
+
+   public DragonType getDragon() {
+      return dragon;
+   }
+
+   public Object getDamageType() {
+      // TODO: Implement damage types
+      return null;
    }
 }
