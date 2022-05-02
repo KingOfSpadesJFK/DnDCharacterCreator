@@ -22,7 +22,7 @@ public class GameCharacter
 
 	private String charName;                // Character name
 	private Race race;						// Race (Human, dwarf, elf, etc.)
-	private String className;               // Class type i.e.: Fighter etc. 
+	private Object classType;				// Class type i.e.: Fighter etc. 	TODO: Create the class type
 	private Size size;
 	private ArrayList<Language> languages;
 

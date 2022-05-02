@@ -22,8 +22,8 @@ public class Halfling extends Race
         setSpeed(25);
     }
 
-    private Halfling(String[] traits, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma) {
-        super(RACE_NAME, strength, dexterity, constitution, intelligence, wisdom, charisma);
+    private Halfling(String[] traits, String race, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma) {
+        super(race, strength, dexterity, constitution, intelligence, wisdom, charisma);
         setTraits(traits);
         setLanguages(languages);
         setSize(Size.SMALL);
@@ -33,7 +33,7 @@ public class Halfling extends Race
     /*
     *   Subtraces
     */
-    public class Lightfoot extends Halfling
+    public class LightfootHalfling extends Halfling
     {
         public static final String RACE_NAME = "Lightfoot Halfling";
         private static final String[] traits = {
@@ -41,12 +41,12 @@ public class Halfling extends Race
             "Naturally Stealthy"
         };
 
-        public Lightfoot() {
-            super(traits, 0, 2, 0, 0, 0, 1);
+        public LightfootHalfling() {
+            super(traits, RACE_NAME, 0, 2, 0, 0, 0, 1);
         }
     }
 
-    public class Stout extends Halfling
+    public class StoutHalfling extends Halfling
     {
         public static final String RACE_NAME = "Lightfoot Halfling";
         private static final String[] traits = {
@@ -54,8 +54,8 @@ public class Halfling extends Race
             "Stout Resilience"
         };
 
-        public Stout() {
-            super(traits, 0, 2, 1, 0, 0, 0);
+        public StoutHalfling() {
+            super(traits, RACE_NAME, 0, 2, 1, 0, 0, 0);
         }
     }
 }
