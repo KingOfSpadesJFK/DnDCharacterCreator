@@ -5,6 +5,15 @@ import race.Race;
 
 public class GameCharacter 
 {
+    public enum Ability {
+        STRENGTH,
+        DEXTERITY,
+        CONSTITUTION,
+        INTELLIGENCE,
+        WISDOM,
+        CHARISMA
+    };
+
     public enum Size {
 		TINY,
 		SMALL,
