@@ -137,8 +137,24 @@ public class Menu extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jp5 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        barbarianTA = new javax.swing.JTextArea();
+        barbarianL = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        fighterTA = new javax.swing.JTextArea();
+        fighterL = new javax.swing.JLabel();
+        rangerL = new javax.swing.JLabel();
+        rogueL = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        rangerTA = new javax.swing.JTextArea();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        rogueTA = new javax.swing.JTextArea();
+        monkL = new javax.swing.JLabel();
+        paladinL = new javax.swing.JLabel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        monkTA = new javax.swing.JTextArea();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        paladinTA = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DnDCharacterCreation");
@@ -1001,26 +1017,108 @@ public class Menu extends javax.swing.JFrame {
 
         jPanel14.setBackground(new java.awt.Color(204, 204, 204));
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jTextArea2.setText("Barbarian\nFIghter\nRanger\nRogue\nMonk\nPaladin");
-        jScrollPane4.setViewportView(jTextArea2);
+        barbarianTA.setEditable(false);
+        barbarianTA.setColumns(20);
+        barbarianTA.setRows(5);
+        barbarianTA.setText("Fierce warrior of primitive background who can enter a battle rage\nHit Die: d12\nPrimary Ability: Strength\nSaving Throw: Strength & Constitution");
+        jScrollPane6.setViewportView(barbarianTA);
+
+        barbarianL.setText("Barbarian");
+
+        fighterTA.setEditable(false);
+        fighterTA.setColumns(20);
+        fighterTA.setRows(5);
+        fighterTA.setText("Master of martial combat, skilled with a variety of weapons and armor\nHit Die: d10\nPrimary Ability: Strength or Dexterity\nSaving Throw: Strength & Constitution");
+        jScrollPane5.setViewportView(fighterTA);
+
+        fighterL.setText("Fighter");
+
+        rangerL.setText("Ranger");
+
+        rogueL.setText("Rogue");
+
+        rangerTA.setEditable(false);
+        rangerTA.setColumns(20);
+        rangerTA.setRows(5);
+        rangerTA.setText("Warrior who uses martial prowers and nature magic to combat threats on the\n\tedges of civilization\nHit Die: d10\nPrimary Ability: Dexterity & Wisdom\nSaving Throw: Strength & Dexterity");
+        jScrollPane7.setViewportView(rangerTA);
+
+        rogueTA.setEditable(false);
+        rogueTA.setColumns(20);
+        rogueTA.setRows(5);
+        rogueTA.setText("Scoundrel who uses stealth and trickery to overcome obstacles and enemies\nHit Die: d8\nPrimary Ability: Dexterity\nSaving Throw: Dexterity & Intelligence");
+        jScrollPane8.setViewportView(rogueTA);
+
+        monkL.setText("Monk");
+
+        paladinL.setText("Paladin");
+
+        monkTA.setEditable(false);
+        monkTA.setColumns(20);
+        monkTA.setRows(5);
+        monkTA.setText("Master of martial arts, harnessing the power opf the body in pursuit of physical\n\tand spiritual perfection\nHit Die: d8\nPrimary Ability: Dexterity & Wisdom\nSaving Throw: Strength & Dexterity");
+        jScrollPane9.setViewportView(monkTA);
+
+        paladinTA.setEditable(false);
+        paladinTA.setColumns(20);
+        paladinTA.setRows(5);
+        paladinTA.setText("Holy warrior bound to a sacred oath\nHit Die: d10\nPrimary Ability: Strength & Charisma\nSaving Throw: Wisdom & Charisma");
+        jScrollPane10.setViewportView(paladinTA);
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel14Layout.createSequentialGroup()
-                .addGap(297, 297, 297)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 453, Short.MAX_VALUE)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(barbarianL)
+                    .addComponent(rangerL)
+                    .addComponent(monkL)
+                    .addComponent(jScrollPane9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 453, Short.MAX_VALUE)
+                    .addComponent(jScrollPane8)
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(paladinL)
+                            .addComponent(rogueL)
+                            .addComponent(fighterL))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane10))
+                .addContainerGap())
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel14Layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(92, Short.MAX_VALUE))
+                .addGap(27, 27, 27)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(barbarianL)
+                    .addComponent(fighterL))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rangerL)
+                    .addComponent(rogueL))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(monkL)
+                    .addComponent(paladinL))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(242, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jp5Layout = new javax.swing.GroupLayout(jp5);
@@ -1617,10 +1715,14 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel barbarianL;
+    private javax.swing.JTextArea barbarianTA;
     private javax.swing.JButton btnRndPts;
     private javax.swing.JLabel chaPNG;
     private javax.swing.JLabel conPNG;
     private javax.swing.JLabel dexPNG;
+    private javax.swing.JLabel fighterL;
+    private javax.swing.JTextArea fighterTA;
     private javax.swing.JLabel intPNG;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -1654,12 +1756,16 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextMod1;
     private javax.swing.JTextField jTextMod2;
@@ -1681,6 +1787,14 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel jp3;
     private javax.swing.JPanel jp4;
     private javax.swing.JPanel jp5;
+    private javax.swing.JLabel monkL;
+    private javax.swing.JTextArea monkTA;
+    private javax.swing.JLabel paladinL;
+    private javax.swing.JTextArea paladinTA;
+    private javax.swing.JLabel rangerL;
+    private javax.swing.JTextArea rangerTA;
+    private javax.swing.JLabel rogueL;
+    private javax.swing.JTextArea rogueTA;
     private javax.swing.JLabel strPNG;
     private javax.swing.JTable tableCharacters;
     private javax.swing.JLabel wisPNG;
