@@ -44,7 +44,7 @@ public class CharacterClass
     }
 
     public int[] getHitDie() {
-        return getHitDie;
+        return hitDie;
     }
 
     public Ability[] getPrimaryAbilities() {
