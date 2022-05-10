@@ -26,7 +26,8 @@ public class CharacterClass
         SICKLE,
         SLING,
         SPEAR,
-        LIGHT_CROSSBOW
+        LIGHT_CROSSBOW,
+        SHORTBOW
     };
 
     private int[] hitDie;
