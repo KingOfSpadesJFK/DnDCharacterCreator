@@ -27,7 +27,8 @@ public class CharacterClass
         SLING,
         SPEAR,
         LIGHT_CROSSBOW,
-        SHORTBOW
+        SHORTBOW,
+        LONGBOW
     };
 
     private int[] hitDie;
