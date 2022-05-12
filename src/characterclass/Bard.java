@@ -14,7 +14,7 @@ public class Bard extends CharacterClass{
 		//
 	};
 
-	public enmu Features{
+	public enum Features{
 		//
 	};
 
