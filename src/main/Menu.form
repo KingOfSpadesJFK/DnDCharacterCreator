@@ -2885,9 +2885,9 @@
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jScrollPane25" min="-2" pref="159" max="-2" attributes="0"/>
+                                              <Component id="jScrollPane25" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="588" max="32767" attributes="0"/>
+                                          <EmptySpace pref="563" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -2925,7 +2925,24 @@
                                     <Component class="javax.swing.JList" name="jList15">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                          <StringArray count="0"/>
+                                          <StringArray count="16">
+                                            <StringItem index="0" value="Acid Splash"/>
+                                            <StringItem index="1" value="Blade Ward"/>
+                                            <StringItem index="2" value="Chill Touch"/>
+                                            <StringItem index="3" value="Dancing Lights"/>
+                                            <StringItem index="4" value="Fire Bolt"/>
+                                            <StringItem index="5" value="Friends"/>
+                                            <StringItem index="6" value="Light"/>
+                                            <StringItem index="7" value="Mage Hand"/>
+                                            <StringItem index="8" value="Mending"/>
+                                            <StringItem index="9" value="Message"/>
+                                            <StringItem index="10" value="Minor Illusion"/>
+                                            <StringItem index="11" value="Poison Spray"/>
+                                            <StringItem index="12" value="Prestidigitation"/>
+                                            <StringItem index="13" value="Ray of Frost"/>
+                                            <StringItem index="14" value="Shocking Grasp"/>
+                                            <StringItem index="15" value="True Strike"/>
+                                          </StringArray>
                                         </Property>
                                       </Properties>
                                       <AuxValues>
@@ -2944,7 +2961,38 @@
                                     <Component class="javax.swing.JList" name="jList16">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                          <StringArray count="0"/>
+                                          <StringArray count="30">
+                                            <StringItem index="0" value="Alarm"/>
+                                            <StringItem index="1" value="Burning Hands"/>
+                                            <StringItem index="2" value="Charm Person"/>
+                                            <StringItem index="3" value="Chromatic Orb"/>
+                                            <StringItem index="4" value="Color Spray"/>
+                                            <StringItem index="5" value="Comprehend Languages"/>
+                                            <StringItem index="6" value="Detect Magic"/>
+                                            <StringItem index="7" value="Disguise Self"/>
+                                            <StringItem index="8" value="Expeditious Retreat"/>
+                                            <StringItem index="9" value="False Life"/>
+                                            <StringItem index="10" value="Feather Fall"/>
+                                            <StringItem index="11" value="Find Familiar"/>
+                                            <StringItem index="12" value="Fog Cloud"/>
+                                            <StringItem index="13" value="Grease"/>
+                                            <StringItem index="14" value="Identify"/>
+                                            <StringItem index="15" value="Illusory Script"/>
+                                            <StringItem index="16" value="Jump"/>
+                                            <StringItem index="17" value="Longstrider"/>
+                                            <StringItem index="18" value="Mage Armor"/>
+                                            <StringItem index="19" value="Magic Missile"/>
+                                            <StringItem index="20" value="Protection from Evil and Good"/>
+                                            <StringItem index="21" value="Ray of Sickness"/>
+                                            <StringItem index="22" value="Shield"/>
+                                            <StringItem index="23" value="Silent Image"/>
+                                            <StringItem index="24" value="Sleep"/>
+                                            <StringItem index="25" value="Tasha&apos;s Hideous Laughter"/>
+                                            <StringItem index="26" value="Tenser&apos;s Floating Disk"/>
+                                            <StringItem index="27" value="Thunderwave"/>
+                                            <StringItem index="28" value="Unseen Servant"/>
+                                            <StringItem index="29" value="Witch Bolt"/>
+                                          </StringArray>
                                         </Property>
                                       </Properties>
                                       <AuxValues>
