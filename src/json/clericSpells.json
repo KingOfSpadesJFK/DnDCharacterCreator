@@ -1,0 +1,199 @@
+//Cleric spell list
+
+//Cantrips (level 0)
+[
+	{
+		"name": "Guidance",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S",
+		"duration": "1 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Light",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, M",
+		"duration": "1 hour",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Mending",
+		"castingTime": "1 min",
+		"range": "Touch",
+		"components": "V, S, M",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Resistance",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S, M",
+		"duration": "1 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Sacred Flame",
+		"castingTime": "1 action",
+		"range": 60,
+		"components": "V, S",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Spare the Dying",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Thaumaturgy",
+		"castingTime": "1 action",
+		"range": 30,
+		"components": "V",
+		"duration": "1 min",
+		"concentration": false,
+		"description": ""
+	}
+]
+
+//Level 1
+[
+	//
+	{
+		"name": "Bane",
+		"castingTime": "1 action",
+		"range": 30,
+		"components": "V, S, M",
+		"duration": "1 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Bless",
+		"castingTime": "1 action",
+		"range": 30,
+		"components": "V, S, M",
+		"duration": "1 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Command",
+		"castingTime": "1 action",
+		"range": 60,
+		"components": "V",
+		"duration": "1 round",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Create or Destroy Water",
+		"castingTime": "1 action",
+		"range": 30,
+		"components": "V, S, M",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Detect Evil and Good",
+		"castingTime": "1 action",
+		"range": "Self",
+		"components": "V, S",
+		"duration": "10 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Detect Magic",
+		"castingTime": "1 action",
+		"range": "Self",
+		"components": "V, S",
+		"duration": "10 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Detect Poison and Disease",
+		"castingTime": "1 action",
+		"range": "Self",
+		"components": "V, S, M",
+		"duration": "10 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Guiding Bolt",
+		"castingTime": "1 action",
+		"range": 120,
+		"components": "V, S",
+		"duration": "1 round",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Healing Word",
+		"castingTime": "1 bonus action",
+		"range": 60,
+		"components": "V",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Inflict Wounds",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Protection from Evil and Good",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S, M",
+		"duration": "10 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Purify Food and Drink",
+		"castingTime": "1 action",
+		"range": 10,
+		"components": "V, S",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": " Sanctuary",
+		"castingTime": "1 bonus action",
+		"range": 30,
+		"components": "V, S, M",
+		"duration": "1 min",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Shield of Faith",
+		"castingTime": "1 bonus action",
+		"range": 60,
+		"components": "V, S, M",
+		"duration": "10 min",
+		"concentration": true,
+		"description": ""
+	}
+]

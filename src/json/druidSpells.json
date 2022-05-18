@@ -1,0 +1,226 @@
+//Druid spell list
+
+//Cantrips (level 0)
+[
+	{
+		"name": "Druidcraft",
+		"castingTime": "1 action",
+		"range": 30,
+		"components": "V, S",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Guidance",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S",
+		"duration": "1 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Mending",
+		"castingTime": "1 min",
+		"range": "Touch",
+		"components": "V, S, M",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Poison Spray",
+		"castingTime": "1 action",
+		"range": 10,
+		"components": "V, S",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Produce Flame",
+		"castingTime": "1 action",
+		"range": "Self",
+		"components": "V, S",
+		"duration": "10 min",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Resistance",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S, M",
+		"duration": "1 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Shillelagh",
+		"castingTime": "1 bonus action",
+		"range": "Touch",
+		"components": "V, S, M",
+		"duration": "1 min",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Thorn Whip",
+		"castingTime": "1 action",
+		"range": 30,
+		"components": "V, S, M",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	}
+]
+
+//Level 1
+[
+	//
+	{
+		"name": "Animal Friendship",
+		"castingTime": "1 action",
+		"range": 30,
+		"components": "V, S, M",
+		"duration": "24 hours",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Charm Person",
+		"castingTime": "1 action",
+		"range": 30,
+		"components": "V, S",
+		"duration": "1 hour",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Create or Destroy Water",
+		"castingTime": "1 action",
+		"range": 30,
+		"components": "V, S, M",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Cure Wounds",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Detect Magic",
+		"castingTime": "1 action",
+		"range": "Self",
+		"components": "V, S",
+		"duration": "10 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Detect Poison and Disease",
+		"castingTime": "1 action",
+		"range": "Self",
+		"components": "V, S, M",
+		"duration": "10 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Entangle",
+		"castingTime": "1 action",
+		"range": 90,
+		"components": "V, S",
+		"duration": "1 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Faerie Fire",
+		"castingTime": "1 action",
+		"range": 60,
+		"components": "V",
+		"duration": "1 min",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Fog Cloud",
+		"castingTime": "1 action",
+		"range": 120,
+		"components": "V, S",
+		"duration": "1 hour",
+		"concentration": true,
+		"description": ""
+	},
+	{
+		"name": "Goodberry",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S, M",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Healing Word",
+		"castingTime": "1 bonus action",
+		"range": 60,
+		"components": "V",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Jump",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S, M",
+		"duration": "1 min",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Longstrider",
+		"castingTime": "1 action",
+		"range": "Touch",
+		"components": "V, S, M",
+		"duration": "1 hour",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Purify Food and Drink",
+		"castingTime": "1 action",
+		"range": 10,
+		"components": "V, S",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Speak with Animals",
+		"castingTime": "1 action",
+		"range": "Self",
+		"components": "V, S",
+		"duration": "10 min",
+		"concentration": false,
+		"description": ""
+	},
+	{
+		"name": "Thunderwave",
+		"castingTime": "1 action",
+		"range": "Self",
+		"components": "V, S",
+		"duration": "Instantaneous",
+		"concentration": false,
+		"description": ""
+	}
+]
