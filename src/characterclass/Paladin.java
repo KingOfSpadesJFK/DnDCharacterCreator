@@ -3,80 +3,69 @@ import java.util.ArrayList;
 import java.util.List;
 
 import main.GameCharacter.Ability;
-public class Paladin extends CharacterClass{
+
+public class Paladin extends CharacterClass
+{
     int constitutionModifier;
     int proficiencyBonus;
     int hitPoints = (constitutionModifier + 10);
-    int hitDie = 1;
-    int hitDice = 10;
 
-    public enum Skills {
-        ATHLETICS,
-        INSIGHT,
-        INTIMIDATION,
-        MEDICINE,
-        PERSUASION,
-        RELIGION
-    };
-
-    public enum Features {
-        DIVINE_SENSE,
-        LAY_ON_HANDS
-    };
-
-    public enum Equipment{
-        PREISTS_PACK,
-        EXPLORERS_PACK,
-        HOLY_SYMBOL
-    };
-
-    public (int[] hitDie, Ability[] primaryAbility, Ability[] savingThrows, ArmorType[] armorProficiencies, WeaponType[] weaponProficiencies) {
-        super(hitDie, primaryAbility, savingThrows, armorProficiencies, weaponProficiencies);
-    }
-
+    private static final int[][] hitDie = { {10}, {1} };
+    private static final Ability[] primaryAbility = { Ability.STRENGTH, Ability.CHARISMA };
+    private static final Ability[] savingThrows = { Ability.WISDOM, Ability.CHARISMA };
+    private static final ArmorType[] armorProficiencies =
     {
-        List<WeaponType> weaponProficiencies = new ArrayList<WeaponType>();
-            weaponProficiences.add(WeaponType.SIMPLE);
-            weaponProficiences.add(WeaponType.MARTIAL);
+        ArmorType.LIGHT,
+        ArmorType.MEDIUM,
+        ArmorType.HEAVY,
+        ArmorType.SHIELDS
+    };
+    private static final WeaponType[] weaponProficiencies =
+    {
+        WeaponType.SIMPLE,
+        WeaponType.MARTIAL
+    };
+    private static final Skill[] skillset = 
+    {
+        Skill.ATHLETICS,
+        Skill.INSIGHT,
+        Skill.INTIMIDATION,
+        Skill.MEDICINE,
+        Skill.PERSUASION,
+        Skill.RELIGION
+    };
 
-        List<Ability> savingThrows = new ArrayList<Ability>();
-            savingThrows.add(Ability.WISDOM);
-            savingThrows.add(Ability.CHARISMA);
-
-        List<ArmorType> armors = new ArrayList<Armortype>();
-            armors.add(ArmorType.LIGHT);
-            armors.add(ArmorType.MEDIUM);
-            armors.add(ArmorType.HEAVY);
-            armors.add(ArmorType.SHIELDS);
-
-        List<Skills> skillset = new ArrayList<Skills>();
-            skillset.add(Skills.ATHLETICS);
-            skillset.add(Skills.INSIGHT);
-            skillset.add(Skills.INTIMIDATION);
-            skillset.add(Skills.MEDICINE);
-            skillset.add(Skills.PERSUASION);
-            skillset.add(Skills.RELIGION);
+    public Paladin() 
+    {
+        super(hitDie, primaryAbility, savingThrows, armorProficiencies, weaponProficiencies, skillset, null);
 
         List<WeaponType> equipmentChoice = new ArrayList<WeaponType>();
         List<Equipment> equipment = new ArrayList<Equipment>();
-            if (equipmentChoice.equals(WeaponType.TWO_MARTIAL)){
-               equipmentChoice.add(WeaponType.MARTIAL);
-                equipmentChoice.add(WeaponType.MARTIAL);
-            } else {
-                equipmentChoice.add(WeaponType.SHIELD);
-                equipmentChoice.add(WeaponType.MARTIAL);
-            }
-            if (equipmentChoice.equals(WeaponType.JAVELINS)){
-                equipmentChoice.add(WeaponType.FIVE_JAVELINS);
-            } else {
-                equipmentChoice.add(WeaponType.SIMPLE_MELEE);
-            }
-            if (equipmentChoice.equals(WeaponType.PRIESTS_PACK)){
-                equipmentChoice.add(WeaponType.PRIESTS_PACK);
-            } else {
-                equipmentChoice.add(WeaponType.EXPLORERS_PACK);
-            }
-            equipmentChoice.add(WeaponType.CHAIN_MAIL);
-            equipmentChoice.add(WeaponType.HOLY_SYMBOL);
+        if (equipmentChoice.contains(WeaponType.TWO_MARTIAL)){
+            equipment.add(Equipment.MARTIAL);
+            equipment.add(Equipment.MARTIAL);
+        } else {
+            equipment.add(Equipment.SHIELD);
+            equipment.add(Equipment.MARTIAL);
+        }
+        if (equipmentChoice.contains(WeaponType.JAVELIN)){
+            equipment.add(Equipment.FIVE_JAVELINS);
+        } else {
+            equipmentChoice.add(WeaponType.SIMPLE);
+        }
+        if (equipmentChoice.contains(WeaponType.PRIESTS_PACK)){
+            equipment.add(Equipment.PRIESTS_PACK);
+        } else {
+            equipment.add(Equipment.EXPLORERS_PACK);
+        }
+        equipment.add(Equipment.CHAIN_MAIL);
+        equipment.add(Equipment.HOLY_SYMBOL);
+
+        this.setEquipment((Equipment[])equipment.toArray());
+    }
+
+    public int getHitPoints() {
+        // TODO Auto-generated method stub
+        return 0;
     }
 }
