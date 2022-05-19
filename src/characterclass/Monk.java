@@ -3,70 +3,80 @@ import java.util.ArrayList;
 import java.util.List;
 
 import main.GameCharacter.Ability;
-public class Monk extends CharacterClass{
+public class Monk extends CharacterClass
+{
             int constitutionModifier;
             int proficiencyBonus;
             int hitPoints = (constitutionModifier + 8);
-            int hitDie = 1;
-            int hitDice = 8;
-
-        public enum Skills {
-            ACROBATICS, 
-            ATHLETICS, 
-            HISTORY,
-            lNSIGHT, 
-            RELIGION, 
-            STEALTH
-        };
+            
+            private static final int[][] hitDie = 
+            {
+                {8},
+                {1}
+            };
+            private static final Ability[] primaryAbility = 
+            {
+                Ability.STRENGTH,
+                Ability.DEXTERITY
+            };
+            private static final Ability[] savingThrows =
+            {
+                Ability.DEXTERITY,
+                Ability.WISDOM
+            };
+            private static final WeaponType[] weaponProficiencies =
+            {
+                WeaponType.SIMPLE,
+                WeaponType.SHORTSWORD
+            };
+            private static final Skill[] skillset = 
+            {
+                Skill.ACROBATICS,
+                Skill.ATHLETICS,
+                Skill.HISTORY,
+                Skill.INSIGHT,
+                Skill.RELIGION,
+                Skill.STEALTH
+            };
 
         public enum Features {
             UNARMORED_DEFENSE, 
             MARTIAL_ARTS
         };
 
-        public enum Equipment{
-            DUNGEONEERS_PACK,
-            EXPLORERS_PACK,
-            TEN_DARTS
-        };
-
-        public (int[] hitDie, Ability[] primaryAbility, Ability[] savingThrows, ArmorType[] armorProficiencies, WeaponType[] weaponProficiencies) {
-			super(hitDie, primaryAbility, savingThrows, armorProficiencies, weaponProficiencies);
-		}
-
+        public Monk()
         {
-            List<WeaponType> weaponProficiencies = new ArrayList<WeaponType>();
-                weaponProficiences.add(WeaponType.SIMPLE);
-                weaponProficiences.add(WeaponType.SHORTSWORD);
+			super(hitDie, primaryAbility, savingThrows, null, weaponProficiencies, skillset, null);
 
-            List<Ability> savingThrows = new ArrayList<Ability>();
-                savingThrows.add(Ability.STRENGTH);
-                savingThrows.add(Ability.DEXTERITY);
-
-            List<Skills> skillset = new ArrayList<Skills>();
-                skillset.add(Skills.ACROBATICS);
-                skillset.add(Skills.ATHLETICS);
-                skillset.add(Skills.HISTORY);
-                skillset.add(Skills.INSIGHT);
-                skillset.add(Skills.RELIGION);
-                skillset.add(Skills.STEALTH);
+            List<Skill> skillset = new ArrayList<Skill>();
+                skillset.add(Skill.ACROBATICS);
+                skillset.add(Skill.ATHLETICS);
+                skillset.add(Skill.HISTORY);
+                skillset.add(Skill.INSIGHT);
+                skillset.add(Skill.RELIGION);
+                skillset.add(Skill.STEALTH);
 
             List<WeaponType> equipmentChoice = new ArrayList<WeaponType>();
             List<Equipment> equipment = new ArrayList<Equipment>();
-                if (equipmentChoice.equals(WeaponType.SHORTSWORD)){
+                if (equipmentChoice.contains(WeaponType.SHORTSWORD)){
                     equipmentChoice.add(WeaponType.SHORTSWORD);
                     equipmentChoice.add(WeaponType.SHORTSWORD);
-                } else if (equipmentChoice.equals(WeaponType.SIMPLE)){
+                } else if (equipmentChoice.contains(WeaponType.SIMPLE)){
                     equipmentChoice.add(WeaponType.SIMPLE);
                     equipmentChoice.add(WeaponType.SIMPLE);
                 }
 
-                if(equipmentChoice.equals(Equipment.DUNGEONEERS_PACK)){
+                if(equipmentChoice.contains(WeaponType.DUNGEONEERS_PACK)){
                     equipment.add(Equipment.DUNGEONEERS_PACK);
                 } else {
                     equipment.add(Equipment.EXPLORERS_PACK);
                 }
 
                 equipment.add(Equipment.TEN_DARTS);
+        }
+
+        public int getHitPoints() {
+            // TODO Auto-generated method stub
+            return 0;
         }
 }

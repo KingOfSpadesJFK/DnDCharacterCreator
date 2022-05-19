@@ -66,6 +66,6 @@ public class Paladin extends CharacterClass
 
     public int getHitPoints() {
         // TODO Auto-generated method stub
-        return 0;
+        return hitPoints;
     }
 }

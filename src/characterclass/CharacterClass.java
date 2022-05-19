@@ -28,7 +28,7 @@ public abstract class CharacterClass
         SPEAR,
         LIGHT_CROSSBOW,
         SHORTBOW,
-        LONGBOW, TWO_MARTIAL, PRIESTS_PACK
+        LONGBOW, TWO_MARTIAL, PRIESTS_PACK, DUNGEONEERS_PACK
     };
 
     public enum Skill {
@@ -37,7 +37,7 @@ public abstract class CharacterClass
         INTIMIDATION,
         MEDICINE,
         PERSUASION,
-        RELIGION
+        RELIGION, ACROBATICS, HISTORY, STEALTH
     };
 
     public enum Feature {
@@ -48,7 +48,7 @@ public abstract class CharacterClass
     public enum Equipment{ 
         PREISTS_PACK,
         EXPLORERS_PACK,
-        HOLY_SYMBOL, MARTIAL, SHIELD, FIVE_JAVELINS, PRIESTS_PACK, CHAIN_MAIL
+        HOLY_SYMBOL, MARTIAL, SHIELD, FIVE_JAVELINS, PRIESTS_PACK, CHAIN_MAIL, TEN_DARTS, DUNGEONEERS_PACK
     };
 
     private int[][] hitDie;
