@@ -48,14 +48,6 @@ public class Monk extends CharacterClass
         {
 			super(hitDie, primaryAbility, savingThrows, null, weaponProficiencies, skillset, null);
 
-            List<Skill> skillset = new ArrayList<Skill>();
-                skillset.add(Skill.ACROBATICS);
-                skillset.add(Skill.ATHLETICS);
-                skillset.add(Skill.HISTORY);
-                skillset.add(Skill.INSIGHT);
-                skillset.add(Skill.RELIGION);
-                skillset.add(Skill.STEALTH);
-
             List<WeaponType> equipmentChoice = new ArrayList<WeaponType>();
             List<Equipment> equipment = new ArrayList<Equipment>();
                 if (equipmentChoice.contains(WeaponType.SHORTSWORD)){
