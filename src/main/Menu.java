@@ -165,65 +165,76 @@ public class Menu extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jScrollPane12 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        bard0 = new javax.swing.JList<>();
         jScrollPane13 = new javax.swing.JScrollPane();
-        jList2 = new javax.swing.JList<>();
+        bard1 = new javax.swing.JList<>();
         clericTab = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jList3 = new javax.swing.JList<>();
+        cleric0 = new javax.swing.JList<>();
         jScrollPane11 = new javax.swing.JScrollPane();
-        jList4 = new javax.swing.JList<>();
+        cleric1 = new javax.swing.JList<>();
         jLabel26 = new javax.swing.JLabel();
         druidTab = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
         jScrollPane14 = new javax.swing.JScrollPane();
-        jList5 = new javax.swing.JList<>();
+        druid0 = new javax.swing.JList<>();
         jScrollPane17 = new javax.swing.JScrollPane();
-        jList8 = new javax.swing.JList<>();
+        druid1 = new javax.swing.JList<>();
         jLabel34 = new javax.swing.JLabel();
         paladinTab = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
         jScrollPane15 = new javax.swing.JScrollPane();
-        jList6 = new javax.swing.JList<>();
+        paladin0 = new javax.swing.JList<>();
         jLabel33 = new javax.swing.JLabel();
         jScrollPane16 = new javax.swing.JScrollPane();
-        jList7 = new javax.swing.JList<>();
+        paladin1 = new javax.swing.JList<>();
         rangerTab = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
         jScrollPane18 = new javax.swing.JScrollPane();
-        jList9 = new javax.swing.JList<>();
+        ranger0 = new javax.swing.JList<>();
         jScrollPane19 = new javax.swing.JScrollPane();
-        jList10 = new javax.swing.JList<>();
+        ranger1 = new javax.swing.JList<>();
         jLabel35 = new javax.swing.JLabel();
         sorcererTab = new javax.swing.JPanel();
         jPanel22 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         jScrollPane20 = new javax.swing.JScrollPane();
-        jList11 = new javax.swing.JList<>();
+        sorcerer0 = new javax.swing.JList<>();
         jScrollPane21 = new javax.swing.JScrollPane();
-        jList12 = new javax.swing.JList<>();
+        sorcerer1 = new javax.swing.JList<>();
         jLabel36 = new javax.swing.JLabel();
         warlockTab = new javax.swing.JPanel();
         jPanel23 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
         jScrollPane22 = new javax.swing.JScrollPane();
-        jList13 = new javax.swing.JList<>();
+        warlock0 = new javax.swing.JList<>();
         jScrollPane23 = new javax.swing.JScrollPane();
-        jList14 = new javax.swing.JList<>();
+        warlock1 = new javax.swing.JList<>();
         jLabel37 = new javax.swing.JLabel();
         wizardTab = new javax.swing.JPanel();
         jPanel24 = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
         jScrollPane24 = new javax.swing.JScrollPane();
-        jList15 = new javax.swing.JList<>();
+        wizard0 = new javax.swing.JList<>();
         jScrollPane25 = new javax.swing.JScrollPane();
-        jList16 = new javax.swing.JList<>();
+        wizard1 = new javax.swing.JList<>();
         jLabel38 = new javax.swing.JLabel();
+        jPanel25 = new javax.swing.JPanel();
+        castingTimeLabel = new javax.swing.JLabel();
+        castingTimeText = new javax.swing.JTextField();
+        rangeLabel = new javax.swing.JLabel();
+        rangeText = new javax.swing.JTextField();
+        componentsLabel = new javax.swing.JLabel();
+        componentsText = new javax.swing.JTextField();
+        durationLabel = new javax.swing.JLabel();
+        durationText = new javax.swing.JTextField();
+        concentrationLabel = new javax.swing.JLabel();
+        concentrationText = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DnDCharacterCreation");
@@ -1240,19 +1251,19 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel24.setText("1st Level");
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        bard0.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Blade Ward", "Dancing Lights", "Friends", "Light", "Mage Hand", "Mending", "Message", "Minor Illusion", "Prestidigitation", "True Strike", "Vicious Mockery" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane12.setViewportView(jList1);
+        jScrollPane12.setViewportView(bard0);
 
-        jList2.setModel(new javax.swing.AbstractListModel<String>() {
+        bard1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Animal Friendship", "Bane", "Charm Person", "Comprehend Languages", "Cure Wounds", "Detect Magic", "DIsguise Self", "Dissonant Whispers", "Faerie Fire", "Feather Fall", "Healing Word", "Heroism", "Identify", "Illusory Script", "Longstrider", "Silent Image", "Sleep", "Speak with Animals", "Tasha's Hideous Laughter", "Thunderwave", "Unseen Servant" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane13.setViewportView(jList2);
+        jScrollPane13.setViewportView(bard1);
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -1267,7 +1278,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel24)
                     .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(588, Short.MAX_VALUE))
+                .addContainerGap(151, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1298,19 +1309,19 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel25.setText("Cantrips (0 Level)");
 
-        jList3.setModel(new javax.swing.AbstractListModel<String>() {
+        cleric0.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Guidance", "Light", "Mending", "Resistance", "Sacred Flame", "Spare the Dying", "Thaumaturgy" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane4.setViewportView(jList3);
+        jScrollPane4.setViewportView(cleric0);
 
-        jList4.setModel(new javax.swing.AbstractListModel<String>() {
+        cleric1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Bane", "Bless", "Command", "Create or Destroy Water", "Cure Wounds", "Detect Evil and Good", "Detect Magic", "Detecct Poison and Disease", "Guiding Bolt", "Healing Word", "Inflict Wounds", "Protection from Evil and Good", "Purify Food and Drink", "Sanctuary", "Shield of Faith" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane11.setViewportView(jList4);
+        jScrollPane11.setViewportView(cleric1);
 
         jLabel26.setText("1st Level");
 
@@ -1327,7 +1338,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel26)
                     .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(573, Short.MAX_VALUE))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1358,19 +1369,19 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel27.setText("Cantrips (0 Level)");
 
-        jList5.setModel(new javax.swing.AbstractListModel<String>() {
+        druid0.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Druidcraft", "Guidance", "Mending", "Poison Spray", "Produce Flame", "Resistance", "Shillelagh", "Thorn Whip" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane14.setViewportView(jList5);
+        jScrollPane14.setViewportView(druid0);
 
-        jList8.setModel(new javax.swing.AbstractListModel<String>() {
+        druid1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Animal Friendship", "Charm Person", "Create or Destroy Water", "Cure Wounds", "Detect Magic", "Detect Poison and Disease", "Entangle", "Faerie Fire", "Fog Cloud", "Goodberry", "Healing Word", "Jump", "Longstrider", "Purify Food and Drink", "Speak with Animals", "Thunderwave" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane17.setViewportView(jList8);
+        jScrollPane17.setViewportView(druid1);
 
         jLabel34.setText("1st Level");
 
@@ -1387,7 +1398,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel34)
                     .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(588, Short.MAX_VALUE))
+                .addContainerGap(151, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1418,16 +1429,16 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel28.setText("Cantrips (0 Level)");
 
-        jScrollPane15.setViewportView(jList6);
+        jScrollPane15.setViewportView(paladin0);
 
         jLabel33.setText("1st Level");
 
-        jList7.setModel(new javax.swing.AbstractListModel<String>() {
+        paladin1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Bless", "Command", "Compelled Duel", "Cure Wounds", "Detect Evil and Good", "Detect Magic", "Detect Poison and Disease", "Divine Favor", "Heroism", "Protection from Evil and Good", "Purify Food and Drink", "Searing Smite", "Shield of Faith", "Thunderous Smite", "Wrathful Smite" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane16.setViewportView(jList7);
+        jScrollPane16.setViewportView(paladin1);
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
@@ -1442,7 +1453,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel33)
                     .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(573, Short.MAX_VALUE))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1473,14 +1484,14 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel29.setText("Cantrips (0 Level)");
 
-        jScrollPane18.setViewportView(jList9);
+        jScrollPane18.setViewportView(ranger0);
 
-        jList10.setModel(new javax.swing.AbstractListModel<String>() {
+        ranger1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Alarm", "Animal Friendship", "Cure Wounds", "Detect Magic Detect Poison and Disease", "Ensnaring Strike", "Fod Cloud", "Goodberry", "Hail of Thorns", "Hunter's Mark", "Jump", "Longstrider", "Speak with Animals" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane19.setViewportView(jList10);
+        jScrollPane19.setViewportView(ranger1);
 
         jLabel35.setText("1st Level");
 
@@ -1497,7 +1508,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel35)
                     .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(522, Short.MAX_VALUE))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1528,19 +1539,19 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel30.setText("Cantrips (0 Level)");
 
-        jList11.setModel(new javax.swing.AbstractListModel<String>() {
+        sorcerer0.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Acid Splash", "Blade Ward", "Chill Touch", "Dancing Lights", "Fire Bolt", "Friends", "Light", "Mage Hand", "Mending", "Message", "Minor Illusion", "Poison Spray", "Prestidigitation", "Ray of Frost", "Shocking Grasp", "True Strike" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane20.setViewportView(jList11);
+        jScrollPane20.setViewportView(sorcerer0);
 
-        jList12.setModel(new javax.swing.AbstractListModel<String>() {
+        sorcerer1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Burning Hands", "Charm Person", "Chromatic Orb", "Color Spray", "Comprehend Languages", "Detect Magic", "Disguise Self", "Expeditious Retreat", "False Life", "Feather Fall", "Fog Cloud", "Jump", "Mage Armor", "Magic Missile", "Ray of Sickness", "Shield", "Silent Image" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane21.setViewportView(jList12);
+        jScrollPane21.setViewportView(sorcerer1);
 
         jLabel36.setText("1st Level");
 
@@ -1557,7 +1568,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel36)
                     .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(588, Short.MAX_VALUE))
+                .addContainerGap(151, Short.MAX_VALUE))
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1588,19 +1599,19 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel31.setText("Cantrips (0 Level)");
 
-        jList13.setModel(new javax.swing.AbstractListModel<String>() {
+        warlock0.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Blade Ward", "Chill Touch", "Eldritch Blast", "Friends", "Mage Hand", "Minor Illusion", "Poison Spray", "Prestidigitation", "True Strike" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane22.setViewportView(jList13);
+        jScrollPane22.setViewportView(warlock0);
 
-        jList14.setModel(new javax.swing.AbstractListModel<String>() {
+        warlock1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Armor of Agathys", "Arms of Hadar", "Charm Person", "Comprehend Languages", "Expeditious Retreat", "Hellish Rebuke", "Hex", "Illusory Script", "Protection from Evil and Good", "Unseen Servant", "Witch Bolt" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane23.setViewportView(jList14);
+        jScrollPane23.setViewportView(warlock1);
 
         jLabel37.setText("1st Level");
 
@@ -1617,7 +1628,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel37)
                     .addComponent(jScrollPane23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(573, Short.MAX_VALUE))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
         jPanel23Layout.setVerticalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1648,19 +1659,19 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel32.setText("Cantrips (0 Level)");
 
-        jList15.setModel(new javax.swing.AbstractListModel<String>() {
+        wizard0.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Acid Splash", "Blade Ward", "Chill Touch", "Dancing Lights", "Fire Bolt", "Friends", "Light", "Mage Hand", "Mending", "Message", "Minor Illusion", "Poison Spray", "Prestidigitation", "Ray of Frost", "Shocking Grasp", "True Strike" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane24.setViewportView(jList15);
+        jScrollPane24.setViewportView(wizard0);
 
-        jList16.setModel(new javax.swing.AbstractListModel<String>() {
+        wizard1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Alarm", "Burning Hands", "Charm Person", "Chromatic Orb", "Color Spray", "Comprehend Languages", "Detect Magic", "Disguise Self", "Expeditious Retreat", "False Life", "Feather Fall", "Find Familiar", "Fog Cloud", "Grease", "Identify", "Illusory Script", "Jump", "Longstrider", "Mage Armor", "Magic Missile", "Protection from Evil and Good", "Ray of Sickness", "Shield", "Silent Image", "Sleep", "Tasha's Hideous Laughter", "Tenser's Floating Disk", "Thunderwave", "Unseen Servant", "Witch Bolt" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane25.setViewportView(jList16);
+        jScrollPane25.setViewportView(wizard1);
 
         jLabel38.setText("1st Level");
 
@@ -1677,7 +1688,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel38)
                     .addComponent(jScrollPane25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(563, Short.MAX_VALUE))
+                .addContainerGap(126, Short.MAX_VALUE))
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1706,17 +1717,101 @@ public class Menu extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Wizard", wizardTab);
 
+        jPanel25.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
+        jPanel25.setLayout(jPanel25Layout);
+        jPanel25Layout.setHorizontalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 35, Short.MAX_VALUE)
+        );
+        jPanel25Layout.setVerticalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        castingTimeLabel.setText("Casting Time");
+
+        castingTimeText.setEditable(false);
+
+        rangeLabel.setText("Range");
+
+        rangeText.setEditable(false);
+        rangeText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rangeTextActionPerformed(evt);
+            }
+        });
+
+        componentsLabel.setText("Components");
+
+        componentsText.setEditable(false);
+
+        durationLabel.setText("Duration");
+
+        durationText.setEditable(false);
+
+        concentrationLabel.setText("Concentration");
+
+        concentrationText.setEditable(false);
+
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane2)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addComponent(concentrationLabel)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(concentrationText, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(castingTimeText, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rangeText, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(componentsText, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel16Layout.createSequentialGroup()
+                                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(castingTimeLabel)
+                                    .addComponent(rangeLabel)
+                                    .addComponent(componentsLabel)
+                                    .addComponent(durationLabel))
+                                .addGap(0, 289, Short.MAX_VALUE))
+                            .addComponent(durationText, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(20, 20, 20))))
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
                 .addGap(0, 21, Short.MAX_VALUE)
                 .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 596, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(castingTimeLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(castingTimeText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(rangeLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rangeText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(componentsLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(componentsText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(durationLabel)
+                .addGap(18, 18, 18)
+                .addComponent(durationText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(concentrationLabel)
+                .addGap(18, 18, 18)
+                .addComponent(concentrationText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jp6Layout = new javax.swing.GroupLayout(jp6);
@@ -2278,6 +2373,10 @@ public class Menu extends javax.swing.JFrame {
         jPanel15.setBackground(new java.awt.Color(153, 153, 153)); 
     }//GEN-LAST:event_jPanel15MouseClicked
 
+    private void rangeTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rangeTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rangeTextActionPerformed
+
     public int randomRoll() {
         int[] tempArray = new int[4];
         int total;
@@ -2330,13 +2429,27 @@ public class Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel barbarianL;
     private javax.swing.JTextArea barbarianTA;
+    private javax.swing.JList<String> bard0;
+    private javax.swing.JList<String> bard1;
     private javax.swing.JPanel bardTab;
     private javax.swing.JButton btnRndPts;
+    private javax.swing.JLabel castingTimeLabel;
+    private javax.swing.JTextField castingTimeText;
     private javax.swing.JLabel chaPNG;
+    private javax.swing.JList<String> cleric0;
+    private javax.swing.JList<String> cleric1;
     private javax.swing.JPanel clericTab;
+    private javax.swing.JLabel componentsLabel;
+    private javax.swing.JTextField componentsText;
     private javax.swing.JLabel conPNG;
+    private javax.swing.JLabel concentrationLabel;
+    private javax.swing.JTextField concentrationText;
     private javax.swing.JLabel dexPNG;
+    private javax.swing.JList<String> druid0;
+    private javax.swing.JList<String> druid1;
     private javax.swing.JPanel druidTab;
+    private javax.swing.JLabel durationLabel;
+    private javax.swing.JTextField durationText;
     private javax.swing.JLabel fighterL;
     private javax.swing.JTextArea fighterTA;
     private javax.swing.JLabel intPNG;
@@ -2377,22 +2490,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JList<String> jList10;
-    private javax.swing.JList<String> jList11;
-    private javax.swing.JList<String> jList12;
-    private javax.swing.JList<String> jList13;
-    private javax.swing.JList<String> jList14;
-    private javax.swing.JList<String> jList15;
-    private javax.swing.JList<String> jList16;
-    private javax.swing.JList<String> jList2;
-    private javax.swing.JList<String> jList3;
-    private javax.swing.JList<String> jList4;
-    private javax.swing.JList<String> jList5;
-    private javax.swing.JList<String> jList6;
-    private javax.swing.JList<String> jList7;
-    private javax.swing.JList<String> jList8;
-    private javax.swing.JList<String> jList9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
@@ -2409,6 +2506,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -2466,19 +2564,31 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel jp6;
     private javax.swing.JLabel monkL;
     private javax.swing.JTextArea monkTA;
+    private javax.swing.JList<String> paladin0;
+    private javax.swing.JList<String> paladin1;
     private javax.swing.JLabel paladinL;
     private javax.swing.JTextArea paladinTA;
     private javax.swing.JPanel paladinTab;
+    private javax.swing.JLabel rangeLabel;
+    private javax.swing.JTextField rangeText;
+    private javax.swing.JList<String> ranger0;
+    private javax.swing.JList<String> ranger1;
     private javax.swing.JLabel rangerL;
     private javax.swing.JTextArea rangerTA;
     private javax.swing.JPanel rangerTab;
     private javax.swing.JLabel rogueL;
     private javax.swing.JTextArea rogueTA;
+    private javax.swing.JList<String> sorcerer0;
+    private javax.swing.JList<String> sorcerer1;
     private javax.swing.JPanel sorcererTab;
     private javax.swing.JLabel strPNG;
     private javax.swing.JTable tableCharacters;
+    private javax.swing.JList<String> warlock0;
+    private javax.swing.JList<String> warlock1;
     private javax.swing.JPanel warlockTab;
     private javax.swing.JLabel wisPNG;
+    private javax.swing.JList<String> wizard0;
+    private javax.swing.JList<String> wizard1;
     private javax.swing.JPanel wizardTab;
     // End of variables declaration//GEN-END:variables
 }

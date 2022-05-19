@@ -1871,7 +1871,37 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTabbedPane2" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTabbedPane2" min="-2" pref="493" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPanel25" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="concentrationLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="concentrationText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="castingTimeText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="rangeText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="componentsText" alignment="0" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="castingTimeLabel" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rangeLabel" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="componentsLabel" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="durationLabel" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="289" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="durationText" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -1879,6 +1909,30 @@
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="21" max="32767" attributes="0"/>
                               <Component id="jTabbedPane2" min="-2" pref="596" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jPanel25" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                              <Component id="castingTimeLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="castingTimeText" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="rangeLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="rangeText" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="componentsLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="componentsText" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="durationLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="durationText" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="concentrationLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="concentrationText" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1926,7 +1980,7 @@
                                               <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
                                               <Component id="jScrollPane13" min="-2" pref="159" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="588" max="32767" attributes="0"/>
+                                          <EmptySpace pref="151" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -1966,7 +2020,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList1">
+                                    <Component class="javax.swing.JList" name="bard0">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="11">
@@ -1997,7 +2051,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList2">
+                                    <Component class="javax.swing.JList" name="bard1">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="21">
@@ -2073,7 +2127,7 @@
                                               <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
                                               <Component id="jScrollPane11" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="573" max="32767" attributes="0"/>
+                                          <EmptySpace pref="136" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -2108,7 +2162,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList3">
+                                    <Component class="javax.swing.JList" name="cleric0">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="7">
@@ -2135,7 +2189,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList4">
+                                    <Component class="javax.swing.JList" name="cleric1">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="15">
@@ -2210,7 +2264,7 @@
                                               <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
                                               <Component id="jScrollPane17" min="-2" pref="159" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="588" max="32767" attributes="0"/>
+                                          <EmptySpace pref="151" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -2245,7 +2299,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList5">
+                                    <Component class="javax.swing.JList" name="druid0">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="8">
@@ -2273,7 +2327,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList8">
+                                    <Component class="javax.swing.JList" name="druid1">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="16">
@@ -2349,7 +2403,7 @@
                                               <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                                               <Component id="jScrollPane16" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="573" max="32767" attributes="0"/>
+                                          <EmptySpace pref="136" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -2384,7 +2438,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList6">
+                                    <Component class="javax.swing.JList" name="paladin0">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="0"/>
@@ -2408,7 +2462,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList7">
+                                    <Component class="javax.swing.JList" name="paladin1">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="15">
@@ -2478,7 +2532,7 @@
                                               <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
                                               <Component id="jScrollPane19" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="522" max="32767" attributes="0"/>
+                                          <EmptySpace pref="85" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -2513,7 +2567,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList9">
+                                    <Component class="javax.swing.JList" name="ranger0">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="0"/>
@@ -2532,7 +2586,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList10">
+                                    <Component class="javax.swing.JList" name="ranger1">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="12">
@@ -2604,7 +2658,7 @@
                                               <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
                                               <Component id="jScrollPane21" min="-2" pref="159" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="588" max="32767" attributes="0"/>
+                                          <EmptySpace pref="151" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -2639,7 +2693,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList11">
+                                    <Component class="javax.swing.JList" name="sorcerer0">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="16">
@@ -2675,7 +2729,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList12">
+                                    <Component class="javax.swing.JList" name="sorcerer1">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="17">
@@ -2752,7 +2806,7 @@
                                               <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
                                               <Component id="jScrollPane23" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="573" max="32767" attributes="0"/>
+                                          <EmptySpace pref="136" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -2787,7 +2841,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList13">
+                                    <Component class="javax.swing.JList" name="warlock0">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="9">
@@ -2816,7 +2870,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList14">
+                                    <Component class="javax.swing.JList" name="warlock1">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="11">
@@ -2887,7 +2941,7 @@
                                               <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
                                               <Component id="jScrollPane25" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="563" max="32767" attributes="0"/>
+                                          <EmptySpace pref="126" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -2922,7 +2976,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList15">
+                                    <Component class="javax.swing.JList" name="wizard0">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="16">
@@ -2958,7 +3012,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="jList16">
+                                    <Component class="javax.swing.JList" name="wizard1">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                           <StringArray count="30">
@@ -3012,6 +3066,79 @@
                         </Container>
                       </SubComponents>
                     </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel25">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="35" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                    </Container>
+                    <Component class="javax.swing.JLabel" name="castingTimeLabel">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Casting Time"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="castingTimeText">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="rangeLabel">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Range"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="rangeText">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rangeTextActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="componentsLabel">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Components"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="componentsText">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="durationLabel">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Duration"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="durationText">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="concentrationLabel">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Concentration"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="concentrationText">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
               </SubComponents>
