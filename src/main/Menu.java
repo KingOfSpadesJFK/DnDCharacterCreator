@@ -41,6 +41,8 @@ public class Menu extends javax.swing.JFrame {
     int intMd = 0;
     int wisMd = 0;
     int chaMd = 0;
+    
+    String spell = "";
 
 
     
@@ -235,6 +237,8 @@ public class Menu extends javax.swing.JFrame {
         durationText = new javax.swing.JTextField();
         concentrationLabel = new javax.swing.JLabel();
         concentrationText = new javax.swing.JTextField();
+        spellNameLabel = new javax.swing.JLabel();
+        spellNameText = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DnDCharacterCreation");
@@ -467,7 +471,7 @@ public class Menu extends javax.swing.JFrame {
                         .addComponent(jScrollPane2)
                         .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(261, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -821,7 +825,7 @@ public class Menu extends javax.swing.JFrame {
                             .addGroup(jPanel10Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 752, Short.MAX_VALUE)
                                     .addGroup(jPanel10Layout.createSequentialGroup()
                                         .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE))))
@@ -915,7 +919,7 @@ public class Menu extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(280, Short.MAX_VALUE))
+                .addContainerGap(342, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1193,7 +1197,7 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jScrollPane9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 453, Short.MAX_VALUE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 515, Short.MAX_VALUE)
                     .addComponent(jScrollPane8)
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1256,12 +1260,24 @@ public class Menu extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        bard0.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        bard0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bard0MouseClicked(evt);
+            }
+        });
         jScrollPane12.setViewportView(bard0);
 
         bard1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Animal Friendship", "Bane", "Charm Person", "Comprehend Languages", "Cure Wounds", "Detect Magic", "DIsguise Self", "Dissonant Whispers", "Faerie Fire", "Feather Fall", "Healing Word", "Heroism", "Identify", "Illusory Script", "Longstrider", "Silent Image", "Sleep", "Speak with Animals", "Tasha's Hideous Laughter", "Thunderwave", "Unseen Servant" };
+            String[] strings = { "Animal Friendship", "Bane", "Charm Person", "Comprehend Languages", "Cure Wounds", "Detect Magic", "Disguise Self", "Dissonant Whispers", "Faerie Fire", "Feather Fall", "Healing Word", "Heroism", "Identify", "Illusory Script", "Longstrider", "Silent Image", "Sleep", "Speak with Animals", "Tasha's Hideous Laughter", "Thunderwave", "Unseen Servant" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        bard1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        bard1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bard1MouseClicked(evt);
+            }
         });
         jScrollPane13.setViewportView(bard1);
 
@@ -1314,12 +1330,24 @@ public class Menu extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        cleric0.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        cleric0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cleric0MouseClicked(evt);
+            }
+        });
         jScrollPane4.setViewportView(cleric0);
 
         cleric1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Bane", "Bless", "Command", "Create or Destroy Water", "Cure Wounds", "Detect Evil and Good", "Detect Magic", "Detecct Poison and Disease", "Guiding Bolt", "Healing Word", "Inflict Wounds", "Protection from Evil and Good", "Purify Food and Drink", "Sanctuary", "Shield of Faith" };
+            String[] strings = { "Bane", "Bless", "Command", "Create or Destroy Water", "Cure Wounds", "Detect Evil and Good", "Detect Magic", "Detect Poison and Disease", "Guiding Bolt", "Healing Word", "Inflict Wounds", "Protection from Evil and Good", "Purify Food and Drink", "Sanctuary", "Shield of Faith" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        cleric1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        cleric1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cleric1MouseClicked(evt);
+            }
         });
         jScrollPane11.setViewportView(cleric1);
 
@@ -1374,12 +1402,24 @@ public class Menu extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        druid0.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        druid0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                druid0MouseClicked(evt);
+            }
+        });
         jScrollPane14.setViewportView(druid0);
 
         druid1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Animal Friendship", "Charm Person", "Create or Destroy Water", "Cure Wounds", "Detect Magic", "Detect Poison and Disease", "Entangle", "Faerie Fire", "Fog Cloud", "Goodberry", "Healing Word", "Jump", "Longstrider", "Purify Food and Drink", "Speak with Animals", "Thunderwave" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        druid1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        druid1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                druid1MouseClicked(evt);
+            }
         });
         jScrollPane17.setViewportView(druid1);
 
@@ -1429,6 +1469,7 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel28.setText("Cantrips (0 Level)");
 
+        paladin0.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane15.setViewportView(paladin0);
 
         jLabel33.setText("1st Level");
@@ -1437,6 +1478,12 @@ public class Menu extends javax.swing.JFrame {
             String[] strings = { "Bless", "Command", "Compelled Duel", "Cure Wounds", "Detect Evil and Good", "Detect Magic", "Detect Poison and Disease", "Divine Favor", "Heroism", "Protection from Evil and Good", "Purify Food and Drink", "Searing Smite", "Shield of Faith", "Thunderous Smite", "Wrathful Smite" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        paladin1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        paladin1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                paladin1MouseClicked(evt);
+            }
         });
         jScrollPane16.setViewportView(paladin1);
 
@@ -1484,12 +1531,21 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel29.setText("Cantrips (0 Level)");
 
+        ranger0.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        ranger0.setToolTipText("");
         jScrollPane18.setViewportView(ranger0);
 
         ranger1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Alarm", "Animal Friendship", "Cure Wounds", "Detect Magic Detect Poison and Disease", "Ensnaring Strike", "Fod Cloud", "Goodberry", "Hail of Thorns", "Hunter's Mark", "Jump", "Longstrider", "Speak with Animals" };
+            String[] strings = { "Alarm", "Animal Friendship", "Cure Wounds", "Detect Magic", "Detect Poison and Disease", "Ensnaring Strike", "Fod Cloud", "Goodberry", "Hail of Thorns", "Hunter's Mark", "Jump", "Longstrider", "Speak with Animals" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        ranger1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        ranger1.setToolTipText("");
+        ranger1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ranger1MouseClicked(evt);
+            }
         });
         jScrollPane19.setViewportView(ranger1);
 
@@ -1508,7 +1564,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel35)
                     .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addContainerGap(158, Short.MAX_VALUE))
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1544,12 +1600,24 @@ public class Menu extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        sorcerer0.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        sorcerer0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sorcerer0MouseClicked(evt);
+            }
+        });
         jScrollPane20.setViewportView(sorcerer0);
 
         sorcerer1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Burning Hands", "Charm Person", "Chromatic Orb", "Color Spray", "Comprehend Languages", "Detect Magic", "Disguise Self", "Expeditious Retreat", "False Life", "Feather Fall", "Fog Cloud", "Jump", "Mage Armor", "Magic Missile", "Ray of Sickness", "Shield", "Silent Image" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        sorcerer1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        sorcerer1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sorcerer1MouseClicked(evt);
+            }
         });
         jScrollPane21.setViewportView(sorcerer1);
 
@@ -1604,12 +1672,24 @@ public class Menu extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        warlock0.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        warlock0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                warlock0MouseClicked(evt);
+            }
+        });
         jScrollPane22.setViewportView(warlock0);
 
         warlock1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Armor of Agathys", "Arms of Hadar", "Charm Person", "Comprehend Languages", "Expeditious Retreat", "Hellish Rebuke", "Hex", "Illusory Script", "Protection from Evil and Good", "Unseen Servant", "Witch Bolt" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        warlock1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        warlock1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                warlock1MouseClicked(evt);
+            }
         });
         jScrollPane23.setViewportView(warlock1);
 
@@ -1664,12 +1744,24 @@ public class Menu extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        wizard0.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        wizard0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                wizard0MouseClicked(evt);
+            }
+        });
         jScrollPane24.setViewportView(wizard0);
 
         wizard1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Alarm", "Burning Hands", "Charm Person", "Chromatic Orb", "Color Spray", "Comprehend Languages", "Detect Magic", "Disguise Self", "Expeditious Retreat", "False Life", "Feather Fall", "Find Familiar", "Fog Cloud", "Grease", "Identify", "Illusory Script", "Jump", "Longstrider", "Mage Armor", "Magic Missile", "Protection from Evil and Good", "Ray of Sickness", "Shield", "Silent Image", "Sleep", "Tasha's Hideous Laughter", "Tenser's Floating Disk", "Thunderwave", "Unseen Servant", "Witch Bolt" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        wizard1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        wizard1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                wizard1MouseClicked(evt);
+            }
         });
         jScrollPane25.setViewportView(wizard1);
 
@@ -1730,10 +1822,12 @@ public class Menu extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
+        castingTimeLabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         castingTimeLabel.setText("Casting Time");
 
         castingTimeText.setEditable(false);
 
+        rangeLabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         rangeLabel.setText("Range");
 
         rangeText.setEditable(false);
@@ -1743,17 +1837,25 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        componentsLabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         componentsLabel.setText("Components");
 
         componentsText.setEditable(false);
 
+        durationLabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         durationLabel.setText("Duration");
 
         durationText.setEditable(false);
 
+        concentrationLabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         concentrationLabel.setText("Concentration");
 
         concentrationText.setEditable(false);
+
+        spellNameLabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        spellNameLabel.setText("Spell Name");
+
+        spellNameText.setEditable(false);
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
@@ -1766,21 +1868,24 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addComponent(concentrationLabel)
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(castingTimeLabel, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rangeLabel, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(componentsLabel, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(durationLabel, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(concentrationLabel)
+                            .addComponent(spellNameLabel))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
                         .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(concentrationText, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(castingTimeText, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(spellNameText, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(castingTimeText, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
                             .addComponent(rangeText, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(componentsText, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel16Layout.createSequentialGroup()
-                                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(castingTimeLabel)
-                                    .addComponent(rangeLabel)
-                                    .addComponent(componentsLabel)
-                                    .addComponent(durationLabel))
-                                .addGap(0, 289, Short.MAX_VALUE))
+                            .addComponent(concentrationText, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(durationText, javax.swing.GroupLayout.Alignment.LEADING))
                         .addGap(20, 20, 20))))
         );
@@ -1790,8 +1895,12 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(0, 21, Short.MAX_VALUE)
                 .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 596, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(spellNameLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(spellNameText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(castingTimeLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(castingTimeText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1801,17 +1910,17 @@ public class Menu extends javax.swing.JFrame {
                 .addComponent(rangeText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(componentsLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(componentsText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(durationLabel)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(durationText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(concentrationLabel)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(concentrationText, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(102, 102, 102))
         );
 
         javax.swing.GroupLayout jp6Layout = new javax.swing.GroupLayout(jp6);
@@ -2377,6 +2486,994 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rangeTextActionPerformed
 
+    
+    private void bard0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bard0MouseClicked
+        switch (bard0.getSelectedIndex()) {
+            case 0 -> spell = "Blade Ward";
+            case 1 -> spell = "Dancing Lights";
+            case 2 -> spell = "Friends";
+            case 3 -> spell = "Light";
+            case 4 -> spell = "Mage Hand";
+            case 5 -> spell = "Mending";
+            case 6 -> spell = "Message";
+            case 7 -> spell = "Minor Illusion";
+            case 8 -> spell = "Prestidigitation";
+            case 9 -> spell = "True Strike";
+            case 10 -> spell = "Vicious Mockery";
+        }
+        bard1.clearSelection();
+        setSpell0();
+    }//GEN-LAST:event_bard0MouseClicked
+
+    private void bard1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bard1MouseClicked
+        switch (bard1.getSelectedIndex()) {
+            case 0 -> spell =  "Animal Friendship";
+            case 1 -> spell =  "Bane";
+            case 2 -> spell =  "Charm Person";
+            case 3 -> spell =  "Comprehend Languages";
+            case 4 -> spell =  "Cure Wounds";
+            case 5 -> spell =  "Detect Magic";
+            case 6 -> spell =  "Disguise Self";
+            case 7 -> spell =  "Dissonant Whispers";
+            case 8 -> spell =  "Faerie Fire";
+            case 9 -> spell =  "Feather Fall";
+            case 10 -> spell =  "Healing Word";
+            case 11 -> spell =  "Heroism";
+            case 12 -> spell =  "Identify";
+            case 13 -> spell =  "Illusory Script";
+            case 14 -> spell =  "Longstrider";
+            case 15 -> spell =  "Silent Image";
+            case 16 -> spell =  "Sleep";
+            case 17 -> spell =  "Speak with Animals";
+            case 18 -> spell =  "Tasha's Hideous Laughter";
+            case 19 -> spell =  "Thunderwave";
+            case 20 -> spell =  "Unseen Servant";
+        }
+        bard0.clearSelection();
+        setSpell1();
+    }//GEN-LAST:event_bard1MouseClicked
+
+    private void cleric0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cleric0MouseClicked
+        switch (cleric0.getSelectedIndex()) {
+            case 0 -> spell =  "Guidance";
+            case 1 -> spell =  "Light";
+            case 2 -> spell =  "Mending";
+            case 3 -> spell =  "Resistance";
+            case 4 -> spell =  "Sacred Flame";
+            case 5 -> spell =  "Spare the Dying";
+            case 6 -> spell =  "Thaumaturgy";
+        }
+        cleric1.clearSelection();
+        setSpell0();
+    }//GEN-LAST:event_cleric0MouseClicked
+
+    private void cleric1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cleric1MouseClicked
+        switch (cleric1.getSelectedIndex()) {
+            case 0 -> spell =  "Bane";
+            case 1 -> spell =  "Bless";
+            case 2 -> spell =  "Command";
+            case 3 -> spell =  "Create or Destroy Water";
+            case 4 -> spell =  "Cure Wounds";
+            case 5 -> spell =  "Detect Evil and Good";
+            case 6 -> spell =  "Detect Magic";
+            case 7 -> spell =  "Detect Poison and Disease";
+            case 8 -> spell =  "Guiding Bolt";
+            case 9 -> spell =  "Healing Word";
+            case 10 -> spell =  "Inflict Wounds";
+            case 11 -> spell =  "Protection from Evil and Good";
+            case 12 -> spell =  "Purify Food and Drink";
+            case 13 -> spell =  "Sanctuary";
+            case 14 -> spell =  "Shield of Faith";
+        }
+        cleric0.clearSelection();
+        setSpell1();
+    }//GEN-LAST:event_cleric1MouseClicked
+
+    private void druid0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_druid0MouseClicked
+        switch (druid0.getSelectedIndex()) {
+            case 0 -> spell =  "Druidcraft";
+            case 1 -> spell =  "Guidance";
+            case 2 -> spell =  "Mending";
+            case 3 -> spell =  "Poison Spray";
+            case 4 -> spell =  "Produce Flame";
+            case 5 -> spell =  "Resistance";
+            case 6 -> spell =  "Shillelagh";
+            case 7 -> spell =  "Thorn Whip";
+        }
+        druid1.clearSelection();
+        setSpell0();
+    }//GEN-LAST:event_druid0MouseClicked
+
+    private void druid1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_druid1MouseClicked
+        switch (druid1.getSelectedIndex()) {
+            case 0 -> spell =  "Animal Friendship";
+            case 1 -> spell =  "Charm Person";
+            case 2 -> spell =  "Create or Destroy Water";
+            case 3 -> spell =  "Cure Wounds";
+            case 4 -> spell =  "Detect Magic";
+            case 5 -> spell =  "Detect Poison and Disease";
+            case 6 -> spell =  "Entangle";
+            case 7 -> spell =  "Faerie Fire";
+            case 8 -> spell =  "Fog Cloud";
+            case 9 -> spell =  "Goodberry";
+            case 10 -> spell =  "Healing Word";
+            case 11 -> spell =  "Jump";
+            case 12 -> spell =  "Longstrider";
+            case 13 -> spell =  "Purify Food and Drink";
+            case 14 -> spell =  "Speak with Animals";
+            case 15 -> spell =  "Thunderwave";
+        }
+        druid0.clearSelection();
+        setSpell1();
+    }//GEN-LAST:event_druid1MouseClicked
+
+    private void paladin1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paladin1MouseClicked
+        switch (paladin1.getSelectedIndex()) {
+        case 0 -> spell =  "Bless";
+        case 1 -> spell =  "Command";
+        case 2 -> spell =  "Compelled Duel";
+        case 3 -> spell =  "Cure Wounds";
+        case 4 -> spell =  "Detect Evil and Good";
+        case 5 -> spell =  "Detect Magic";
+        case 6 -> spell =  "Detect Poison and Disease";
+        case 7 -> spell =  "Divine Favor";
+        case 8 -> spell =  "Heroism";
+        case 9 -> spell =  "Protection from Evil and Good";
+        case 10 -> spell =  "Purify Food and Drink";
+        case 11 -> spell =  "Searing Smite";
+        case 12 -> spell =  "Shield of Faith";
+        case 13 -> spell =  "Thunderous Smite";
+        case 14 -> spell =  "Wrathful Smite";
+        }
+        setSpell1();
+    }//GEN-LAST:event_paladin1MouseClicked
+
+    private void ranger1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ranger1MouseClicked
+        switch (ranger1.getSelectedIndex()) {
+            case 0 -> spell =  "Alarm";
+            case 1 -> spell =  "Animal Friendship";
+            case 2 -> spell =  "Cure Wounds";
+            case 3 -> spell =  "Detect Magic Detect Poison and Disease";
+            case 4 -> spell =  "Ensnaring Strike";
+            case 5 -> spell =  "Fod Cloud";
+            case 6 -> spell =  "Goodberry";
+            case 7 -> spell =  "Hail of Thorns";
+            case 8 -> spell =  "Hunter's Mark";
+            case 9 -> spell =  "Jump";
+            case 10 -> spell =  "Longstrider";
+            case 11 -> spell =  "Speak with Animals";
+        }
+        setSpell1();
+    }//GEN-LAST:event_ranger1MouseClicked
+
+    private void sorcerer0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sorcerer0MouseClicked
+        switch (sorcerer0.getSelectedIndex()) {
+        case 0 -> spell =  "Acid Splash";
+        case 1 -> spell =  "Blade Ward";
+        case 2 -> spell =  "Chill Touch";
+        case 3 -> spell =  "Dancing Lights";
+        case 4 -> spell =  "Fire Bolt";
+        case 5 -> spell =  "Friends";
+        case 6 -> spell =  "Light";
+        case 7 -> spell =  "Mage Hand";
+        case 8 -> spell =  "Mending";
+        case 9 -> spell =  "Message";
+        case 10 -> spell =  "Minor Illusion";
+        case 11 -> spell =  "Poison Spray";
+        case 12 -> spell =  "Prestidigitation";
+        case 13 -> spell =  "Ray of Frost";
+        case 14 -> spell =  "Shocking Grasp";
+        case 15 -> spell =  "True Strike";
+        }
+        sorcerer1.clearSelection();
+        setSpell0();
+    }//GEN-LAST:event_sorcerer0MouseClicked
+
+    private void sorcerer1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sorcerer1MouseClicked
+        switch (sorcerer1.getSelectedIndex()) {
+            case 0 -> spell =  "Burning Hands";
+            case 1 -> spell =  "Charm Person";
+            case 2 -> spell =  "Chromatic Orb";
+            case 3 -> spell =  "Color Spray";
+            case 4 -> spell =  "Comprehend Languages";
+            case 5 -> spell =  "Detect Magic";
+            case 6 -> spell =  "Disguise Self";
+            case 7 -> spell =  "Expeditious Retreat";
+            case 8 -> spell =  "False Life";
+            case 9 -> spell =  "Feather Fall";
+            case 10 -> spell =  "Fog Cloud";
+            case 11 -> spell =  "Jump";
+            case 12 -> spell =  "Mage Armor";
+            case 13 -> spell =  "Magic Missile";
+            case 14 -> spell =  "Ray of Sickness";
+            case 15 -> spell =  "Shield";
+            case 16 -> spell =  "Silent Image";
+        }
+        sorcerer0.clearSelection();
+        setSpell1();
+    }//GEN-LAST:event_sorcerer1MouseClicked
+
+    private void warlock0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_warlock0MouseClicked
+        switch (warlock0.getSelectedIndex()) {
+            case 0 -> spell =  "Blade Ward";
+            case 1 -> spell =  "Chill Touch";
+            case 2 -> spell =  "Eldritch Blast";
+            case 3 -> spell =  "Friends";
+            case 4 -> spell =  "Mage Hand";
+            case 5 -> spell =  "Minor Illusion";
+            case 6 -> spell =  "Poison Spray";
+            case 7 -> spell =  "Prestidigitation";
+            case 8 -> spell =  "True Strike";
+        }
+        warlock1.clearSelection();
+        setSpell0();
+    }//GEN-LAST:event_warlock0MouseClicked
+
+    private void warlock1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_warlock1MouseClicked
+        switch (warlock1.getSelectedIndex()) {
+            case 0 -> spell =  "Armor of Agathys";
+            case 1 -> spell =  "Arms of Hadar";
+            case 2 -> spell =  "Charm Person";
+            case 3 -> spell =  "Comprehend Languages";
+            case 4 -> spell =  "Expeditious Retreat";
+            case 5 -> spell =  "Hellish Rebuke";
+            case 6 -> spell =  "Hex";
+            case 7 -> spell =  "Illusory Script";
+            case 8 -> spell =  "Protection from Evil and Good";
+            case 9 -> spell =  "Unseen Servant";
+            case 10 -> spell =  "Witch Bolt";
+        }
+        warlock0.clearSelection();
+        setSpell1();
+    }//GEN-LAST:event_warlock1MouseClicked
+
+    private void wizard0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wizard0MouseClicked
+        switch (wizard0.getSelectedIndex()) {
+            case 0 -> spell =  "Acid Splash";
+            case 1 -> spell =  "Blade Ward";
+            case 2 -> spell =  "Chill Touch";
+            case 3 -> spell =  "Dancing Lights";
+            case 4 -> spell =  "Fire Bolt";
+            case 5 -> spell =  "Friends";
+            case 6 -> spell =  "Light";
+            case 7 -> spell =  "Mage Hand";
+            case 8 -> spell =  "Mending";
+            case 9 -> spell =  "Message";
+            case 10 -> spell =  "Minor Illusion";
+            case 11 -> spell =  "Poison Spray";
+            case 12 -> spell =  "Prestidigitation";
+            case 13 -> spell =  "Ray of Frost";
+            case 14 -> spell =  "Shocking Grasp";
+            case 15 -> spell =  "True Strike";
+        }
+        wizard1.clearSelection();
+        setSpell0();
+    }//GEN-LAST:event_wizard0MouseClicked
+
+    private void wizard1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wizard1MouseClicked
+        switch (wizard1.getSelectedIndex()) {
+            case 0 -> spell =  "Alarm";
+            case 1 -> spell =  "Burning Hands";
+            case 2 -> spell =  "Charm Person";
+            case 3 -> spell =  "Chromatic Orb";
+            case 4 -> spell =  "Color Spray";
+            case 5 -> spell =  "Comprehend Languages";
+            case 6 -> spell =  "Detect Magic";
+            case 7 -> spell =  "Disguise Self";
+            case 8 -> spell =  "Expeditious Retreat";
+            case 9 -> spell =  "False Life";
+            case 10 -> spell =  "Feather Fall";
+            case 11 -> spell =  "Find Familiar";
+            case 12 -> spell =  "Fog Cloud";
+            case 13 -> spell =  "Grease";
+            case 14 -> spell =  "Identify";
+            case 15 -> spell =  "Illusory Script";
+            case 16 -> spell =  "Jump";
+            case 17 -> spell =  "Longstrider";
+            case 18 -> spell =  "Mage Armor";
+            case 19 -> spell =  "Magic Missile";
+            case 20 -> spell =  "Protection from Evil and Good";
+            case 21 -> spell =  "Ray of Sickness";
+            case 22 -> spell =  "Shield";
+            case 23 -> spell =  "Silent Image";
+            case 24 -> spell =  "Sleep";
+            case 25 -> spell =  "Tasha's Hideous Laughter";
+            case 26 -> spell =  "Tenser's Floating Disk";
+            case 27 -> spell =  "Thunderwave";
+            case 28 -> spell =  "Unseen Servant";
+            case 29 -> spell =  "Witch Bolt";
+        }
+        wizard0.clearSelection();
+        setSpell1();
+    }//GEN-LAST:event_wizard1MouseClicked
+
+    
+    public void setSpell0() {
+        switch (spell) {
+            case "Acid Splash":
+                spellNameText.setText("Acid Splash");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Blade Ward":
+                spellNameText.setText("Blade Ward");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("1 round");
+                concentrationText.setText("false");
+                break;
+            case "Chill Touch":
+                spellNameText.setText("Chill Touch");
+                castingTimeText.setText("1 action");
+                rangeText.setText("120");
+                componentsText.setText("V, S");
+                durationText.setText("1 round");
+                concentrationText.setText("false");
+                break;
+            case "Dancing Lights":
+                spellNameText.setText("Dancing Lights");
+                castingTimeText.setText("1 action");
+                rangeText.setText("120");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            case "Druidcraft":
+                spellNameText.setText("Druidcraft");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Eldritch Blast":
+                spellNameText.setText("Eldritch Blast");
+                castingTimeText.setText("1 action");
+                rangeText.setText("120");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Fire Bolt":
+                spellNameText.setText("Fire Bolt");
+                castingTimeText.setText("1 action");
+                rangeText.setText("120");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Friends":
+                spellNameText.setText("Friends");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            case "Guidance":
+                spellNameText.setText("Guidance");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            case "Light":
+                spellNameText.setText("Light");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, M");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Mage Hand":
+                spellNameText.setText("Mage Hand");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S");
+                durationText.setText("1 min");
+                concentrationText.setText("false");
+                break;
+            case "Mending":
+                spellNameText.setText("Mending");
+                castingTimeText.setText("1 min");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S, M");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Message":
+                spellNameText.setText("Message");
+                castingTimeText.setText("1 action");
+                rangeText.setText("120");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 round");
+                concentrationText.setText("false");
+                break;
+            case "Minor Illusion":
+                spellNameText.setText("Minor Illusion");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("false");
+                break;
+            case "Poison Spray":
+                spellNameText.setText("Poison Spray");
+                castingTimeText.setText("1 action");
+                rangeText.setText("10");
+                componentsText.setText("V, S");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Prestidigitation":
+                spellNameText.setText("Prestidigitation");
+                castingTimeText.setText("1 action");
+                rangeText.setText("10");
+                componentsText.setText("V, S");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Produce Flame":
+                spellNameText.setText("Produce Flame");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("10 min");
+                concentrationText.setText("false");
+                break;
+            case "Ray of Frost":
+                spellNameText.setText("Ray of Frost");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Resistance":
+                spellNameText.setText("Resistance");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            case "Sacred Flame":
+                spellNameText.setText("Sacred Flame");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Shillelagh":
+                spellNameText.setText("Shillelagh");
+                castingTimeText.setText("1 bonus action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("false");
+                break;
+            case "Shocking Grasp":
+                spellNameText.setText("Shocking Grasp");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Spare the Dying":
+                spellNameText.setText("Spare the Dying");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Thaumaturgy":
+                spellNameText.setText("Thaumaturgy");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V");
+                durationText.setText("1 minute");
+                concentrationText.setText("false");
+                break;
+            case "Thorn Whip":
+                spellNameText.setText("Thorn Whip");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "True Strike":
+                spellNameText.setText("True Strike");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("S");
+                durationText.setText("1 round");
+                concentrationText.setText("true");
+                break;
+            case "Vicious Mockery":
+                spellNameText.setText("Vicious Mockery");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            default:
+                spellNameText.setText("");
+                castingTimeText.setText("");
+                rangeText.setText("");
+                componentsText.setText("");
+                durationText.setText("");
+                concentrationText.setText("");
+                break;
+        }
+    }
+    
+    public void setSpell1() {
+        switch (spell) {
+            case "Alarm":
+                spellNameText.setText("Alarm");
+                castingTimeText.setText("1 min");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("8 hours");
+                concentrationText.setText("false");
+                break;
+            case "Animal Friendship":
+                spellNameText.setText("Animal Friendship");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("24 hours");
+                concentrationText.setText("false");
+                break;
+            case "Armor of Agathys":
+                spellNameText.setText("Armor of Agathys");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S, M");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Arms of Hadar":
+                spellNameText.setText("Arms of Hadar");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Bane":
+                spellNameText.setText("Bane");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            case "Bless":
+                spellNameText.setText("Bless");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            case "Burning Hands":
+                spellNameText.setText("Burning Hands");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Charm Person":
+                spellNameText.setText("Charm Person");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Chromatic Orb":
+                spellNameText.setText("Chromatic Orb");
+                castingTimeText.setText("1 action");
+                rangeText.setText("90");
+                componentsText.setText("V, S, M");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Color Spray":
+                spellNameText.setText("Color Spray");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 round");
+                concentrationText.setText("false");
+                break;
+            case "Command":
+                spellNameText.setText("Command");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V");
+                durationText.setText("1 round");
+                concentrationText.setText("false");
+                break;
+            case "Comprehend Languages":
+                spellNameText.setText("Comprehend Languages");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Create or Destroy Water":
+                spellNameText.setText("Create or Destroy Water");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Cure Wounds":
+                spellNameText.setText("Cure Wounds");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Detect Evil and Good":
+                spellNameText.setText("Detect Evil and Good");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("10 min");
+                concentrationText.setText("true");
+                break;
+            case "Detect Magic":
+                spellNameText.setText("Detect Magic");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S, M");
+                durationText.setText("10 min");
+                concentrationText.setText("true");
+                break;
+            case "Detect Poison and Disease":
+                spellNameText.setText("Detect Poison and Disease");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S, M");
+                durationText.setText("10 min");
+                concentrationText.setText("true");
+                break;
+            case "Disguise Self":
+                spellNameText.setText("Disguise Self");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Dissonant Whispers":
+                spellNameText.setText("Dissonant Whispers");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Entangle":
+                spellNameText.setText("Entangle");
+                castingTimeText.setText("1 action");
+                rangeText.setText("90");
+                componentsText.setText("V, S");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            case "Expeditious Retreat":
+                spellNameText.setText("Expeditious Retreat");
+                castingTimeText.setText("1 bonus action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("10 min");
+                concentrationText.setText("true");
+                break;
+            case "False Life":
+                spellNameText.setText("False Life");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Faerie Fire":
+                spellNameText.setText("Faerie Fire");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            case "Feather Fall":
+                spellNameText.setText("Feather Fall");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V, M");
+                durationText.setText("1 min");
+                concentrationText.setText("false");
+                break;
+            case "Find Familiar":
+                spellNameText.setText("Find Familiar");
+                castingTimeText.setText("1 hour");
+                rangeText.setText("10");
+                componentsText.setText("V, S, M");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Fog Cloud":
+                spellNameText.setText("Fog Cloud");
+                castingTimeText.setText("1 action");
+                rangeText.setText("120");
+                componentsText.setText("V, S");
+                durationText.setText("1 hour");
+                concentrationText.setText("true");
+                break;
+            case "Grease":
+                spellNameText.setText("Grease");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("false");
+                break;
+            case "Guiding Bolt":
+                spellNameText.setText("Guiding Bolt");
+                castingTimeText.setText("1 action");
+                rangeText.setText("120");
+                componentsText.setText("V, S");
+                durationText.setText("1 round");
+                concentrationText.setText("false");
+                break;
+            case "Goodberry":
+                spellNameText.setText("Goodberry");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S, M");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Healing Word":
+                spellNameText.setText("Healing Word");
+                castingTimeText.setText("1 bonus action");
+                rangeText.setText("60");
+                componentsText.setText("V");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Hellish Rebuke":
+                spellNameText.setText("Hellish Rebuke");
+                castingTimeText.setText("1 reaction");
+                rangeText.setText("60");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Heroism":
+                spellNameText.setText("Heroism");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S");
+                durationText.setText("1 min");
+                concentrationText.setText("True");
+                break;
+            case "Hex":
+                spellNameText.setText("Hex");
+                castingTimeText.setText("1 bonus action");
+                rangeText.setText("90");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 hour");
+                concentrationText.setText("true");
+                break;
+            case "Identify":
+                spellNameText.setText("Identify");
+                castingTimeText.setText("1 min");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S, M");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Illusory Script":
+                spellNameText.setText("Illusiory Script");
+                castingTimeText.setText("1 min");
+                rangeText.setText("Touch");
+                componentsText.setText("S, M");
+                durationText.setText("10 days");
+                concentrationText.setText("false");
+                break;
+            case "Illusiory Script":
+                spellNameText.setText("Illusiory Script");
+                castingTimeText.setText("1 min");
+                rangeText.setText("Touch");
+                componentsText.setText("S, M");
+                durationText.setText("10 days");
+                concentrationText.setText("false");
+                break;
+            case "Inflict Wounds":
+                spellNameText.setText("Inflict Wounds");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Jump":
+                spellNameText.setText("Jump");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S, M");
+                durationText.setText("8 hours");
+                concentrationText.setText("false");
+                break;
+            case "Longstrider":
+                spellNameText.setText("Longstrider");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Mage Armor":
+                spellNameText.setText("Mage Armor");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S, M");
+                durationText.setText("8 hours");
+                concentrationText.setText("false");
+                break;
+            case "Magic Missile":
+                spellNameText.setText("Magic Missile");
+                castingTimeText.setText("1 action");
+                rangeText.setText("120");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Protection from Evil and Good":
+                spellNameText.setText("Protection from Evil and Good");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Touch");
+                componentsText.setText("V, S, M");
+                durationText.setText("10 min");
+                concentrationText.setText("true");
+                break;
+            case "Purify Food and Drink":
+                spellNameText.setText("Purify Food and Drink");
+                castingTimeText.setText("1 action");
+                rangeText.setText("10");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Ray of Sickness":
+                spellNameText.setText("Ray of Sickness");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Sanctuary":
+                spellNameText.setText("Sanctuary");
+                castingTimeText.setText("1 bonus action");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("false");
+                break;
+            case "Shield":
+                spellNameText.setText("Shield");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("1 round");
+                concentrationText.setText("false");
+                break;
+            case "Shield of Faith":
+                spellNameText.setText("Shield of Faith");
+                castingTimeText.setText("1 bonus action");
+                rangeText.setText("60");
+                componentsText.setText("V, S, M");
+                durationText.setText("10 min");
+                concentrationText.setText("true");
+                break;
+            case "Silent Image":
+                spellNameText.setText("Silent Image");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V, S, M");
+                durationText.setText("10 min");
+                concentrationText.setText("true");
+                break;
+            case "Sleep":
+                spellNameText.setText("Sleep");
+                castingTimeText.setText("1 action");
+                rangeText.setText("90");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("false");
+                break;
+            case "Speak with Animals":
+                spellNameText.setText("Speak with Animals");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("10 min");
+                concentrationText.setText("false");
+                break;
+            case "Tasha's Hideous Laughter":
+                spellNameText.setText("Tasha's Hideous Laughter");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            case "Tenser's Floating Disk":
+                spellNameText.setText("Tenser’s Floating Disk");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Thunderwave":
+                spellNameText.setText("Thunderwave");
+                castingTimeText.setText("1 action");
+                rangeText.setText("Self");
+                componentsText.setText("V, S");
+                durationText.setText("Instantaneous");
+                concentrationText.setText("false");
+                break;
+            case "Unseen Servant":
+                spellNameText.setText("Unseen Servant");
+                castingTimeText.setText("1 action");
+                rangeText.setText("60");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 hour");
+                concentrationText.setText("false");
+                break;
+            case "Witch Bolt":
+                spellNameText.setText("Witch Bolt");
+                castingTimeText.setText("1 action");
+                rangeText.setText("30");
+                componentsText.setText("V, S, M");
+                durationText.setText("1 min");
+                concentrationText.setText("true");
+                break;
+            default:
+                spellNameText.setText("");
+                castingTimeText.setText("");
+                rangeText.setText("");
+                componentsText.setText("");
+                durationText.setText("");
+                concentrationText.setText("");
+                break;
+        }
+    }
+    
+    
+    
+    
+    
     public int randomRoll() {
         int[] tempArray = new int[4];
         int total;
@@ -2581,6 +3678,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JList<String> sorcerer0;
     private javax.swing.JList<String> sorcerer1;
     private javax.swing.JPanel sorcererTab;
+    private javax.swing.JLabel spellNameLabel;
+    private javax.swing.JTextField spellNameText;
     private javax.swing.JLabel strPNG;
     private javax.swing.JTable tableCharacters;
     private javax.swing.JList<String> warlock0;
