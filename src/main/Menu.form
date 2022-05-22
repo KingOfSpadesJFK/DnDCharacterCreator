@@ -1181,31 +1181,42 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="278" max="-2" attributes="0"/>
+                              <Component id="jLabel18" min="-2" pref="373" max="-2" attributes="0"/>
+                              <EmptySpace pref="279" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jComboBox1" min="-2" pref="180" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane3" min="-2" pref="400" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="jLabel18" min="-2" pref="373" max="-2" attributes="0"/>
+                                  <Component id="jComboBox1" alignment="1" min="-2" pref="180" max="-2" attributes="0"/>
+                                  <Component id="ranRaceButton" alignment="1" min="-2" pref="118" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="342" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jScrollPane3" pref="400" max="32767" attributes="0"/>
+                                  <Component id="ranRaceText" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
                                   <Component id="jScrollPane3" min="-2" pref="228" max="-2" attributes="0"/>
+                                  <Component id="jComboBox1" min="-2" pref="36" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="300" max="32767" attributes="0"/>
+                              <EmptySpace pref="89" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="ranRaceButton" alignment="3" min="-2" pref="56" max="-2" attributes="0"/>
+                                  <Component id="ranRaceText" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1255,7 +1266,7 @@
                             <Property name="editable" type="boolean" value="false"/>
                             <Property name="columns" type="int" value="20"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Arial Rounded MT Bold" size="24" style="0"/>
+                              <Font name="Arial" size="24" style="0"/>
                             </Property>
                             <Property name="lineWrap" type="boolean" value="true"/>
                             <Property name="rows" type="int" value="5"/>
@@ -1270,6 +1281,23 @@
                           <Font name="Segoe UI" size="24" style="0"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Show Race bonuses for Point stats"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="ranRaceButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Random Race"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ranRaceButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="ranRaceText">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Arial" size="18" style="0"/>
+                        </Property>
+                        <Property name="horizontalAlignment" type="int" value="0"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1641,29 +1669,33 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jScrollPane7" alignment="1" pref="453" max="32767" attributes="0"/>
-                                  <Component id="jScrollPane6" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="barbarianL" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="rangerL" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="monkL" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane9" alignment="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jScrollPane7" alignment="1" pref="453" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane6" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="barbarianL" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rangerL" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="monkL" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane9" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="ranClassButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jScrollPane5" pref="515" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane5" pref="453" max="32767" attributes="0"/>
                                   <Component id="jScrollPane8" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane10" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="paladinL" min="-2" max="-2" attributes="0"/>
                                           <Component id="rogueL" min="-2" max="-2" attributes="0"/>
                                           <Component id="fighterL" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ranClassText" alignment="0" min="-2" pref="192" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="jScrollPane10" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1702,7 +1734,12 @@
                                   <Component id="jScrollPane9" min="-2" max="-2" attributes="0"/>
                                   <Component id="jScrollPane10" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="242" max="32767" attributes="0"/>
+                              <EmptySpace pref="145" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="ranClassText" alignment="3" min="-2" pref="49" max="-2" attributes="0"/>
+                                  <Component id="ranClassButton" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1840,6 +1877,23 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Component class="javax.swing.JTextField" name="ranClassText">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Arial Rounded MT Bold" size="14" style="0"/>
+                        </Property>
+                        <Property name="horizontalAlignment" type="int" value="0"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="ranClassButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Random Class"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ranClassButtonActionPerformed"/>
+                      </Events>
+                    </Component>
                   </SubComponents>
                 </Container>
               </SubComponents>
