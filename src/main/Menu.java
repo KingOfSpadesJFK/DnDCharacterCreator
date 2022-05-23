@@ -198,6 +198,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         jScrollPane16 = new javax.swing.JScrollPane();
         paladin1 = new javax.swing.JList<>();
+        jLabel39 = new javax.swing.JLabel();
         rangerTab = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
@@ -206,6 +207,7 @@ public class Menu extends javax.swing.JFrame {
         jScrollPane19 = new javax.swing.JScrollPane();
         ranger1 = new javax.swing.JList<>();
         jLabel35 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
         sorcererTab = new javax.swing.JPanel();
         jPanel22 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
@@ -1529,25 +1531,32 @@ public class Menu extends javax.swing.JFrame {
         });
         jScrollPane16.setViewportView(paladin1);
 
+        jLabel39.setText("*Character level 1 Paladin would have no spells*");
+
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel20Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel28))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel33)
-                    .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel39)
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel28))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel33)
+                            .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(136, Short.MAX_VALUE))
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel20Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(8, 8, 8)
+                .addComponent(jLabel39)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel28)
                     .addComponent(jLabel33))
@@ -1578,7 +1587,7 @@ public class Menu extends javax.swing.JFrame {
         jScrollPane18.setViewportView(ranger0);
 
         ranger1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Alarm", "Animal Friendship", "Cure Wounds", "Detect Magic", "Detect Poison and Disease", "Ensnaring Strike", "Fod Cloud", "Goodberry", "Hail of Thorns", "Hunter's Mark", "Jump", "Longstrider", "Speak with Animals" };
+            String[] strings = { "Alarm", "Animal Friendship", "Cure Wounds", "Detect Magic", "Detect Poison and Disease", "Ensnaring Strike", "Fog Cloud", "Goodberry", "Hail of Thorns", "Hunter's Mark", "Jump", "Longstrider", "Speak with Animals" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -1593,25 +1602,34 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel35.setText("1st Level");
 
+        jLabel40.setText("*Character level 1 Ranger would have no spells*");
+
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
         jPanel21Layout.setHorizontalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel21Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel29))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel35)
-                    .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(158, Short.MAX_VALUE))
+                    .addGroup(jPanel21Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel29))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel35)
+                            .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel21Layout.createSequentialGroup()
+                        .addGap(104, 104, 104)
+                        .addComponent(jLabel40)))
+                .addContainerGap(139, Short.MAX_VALUE))
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel21Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(10, 10, 10)
+                .addComponent(jLabel40)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel29)
                     .addComponent(jLabel35))
@@ -2675,15 +2693,16 @@ public class Menu extends javax.swing.JFrame {
             case 0 -> spell =  "Alarm";
             case 1 -> spell =  "Animal Friendship";
             case 2 -> spell =  "Cure Wounds";
-            case 3 -> spell =  "Detect Magic Detect Poison and Disease";
-            case 4 -> spell =  "Ensnaring Strike";
-            case 5 -> spell =  "Fod Cloud";
-            case 6 -> spell =  "Goodberry";
-            case 7 -> spell =  "Hail of Thorns";
-            case 8 -> spell =  "Hunter's Mark";
-            case 9 -> spell =  "Jump";
-            case 10 -> spell =  "Longstrider";
-            case 11 -> spell =  "Speak with Animals";
+            case 3 -> spell =  "Detect Magic";
+            case 4 -> spell =  "Detect Poison and Disease";
+            case 5 -> spell =  "Ensnaring Strike";
+            case 6 -> spell =  "Fog Cloud";
+            case 7 -> spell =  "Goodberry";
+            case 8 -> spell =  "Hail of Thorns";
+            case 9 -> spell =  "Hunter's Mark";
+            case 10 -> spell =  "Jump";
+            case 11 -> spell =  "Longstrider";
+            case 12 -> spell =  "Speak with Animals";
         }
         setSpell1();
     }//GEN-LAST:event_ranger1MouseClicked
@@ -3658,7 +3677,9 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
