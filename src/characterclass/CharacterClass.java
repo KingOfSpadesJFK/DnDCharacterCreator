@@ -6,7 +6,8 @@ public abstract class CharacterClass
     public enum ArmorType {
         LIGHT,
         MEDIUM,
-        SHIELDS, HEAVY
+        SHIELDS,
+        HEAVY
     };
 
     public enum WeaponType {
@@ -28,16 +29,26 @@ public abstract class CharacterClass
         SPEAR,
         LIGHT_CROSSBOW,
         SHORTBOW,
-        LONGBOW, TWO_MARTIAL, PRIESTS_PACK, DUNGEONEERS_PACK
+        LONGBOW,
+        TWO_MARTIAL,
+        PRIESTS_PACK,
+        DUNGEONEERS_PACK
     };
 
     public enum Skill {
         ATHLETICS,
+        ARCANA,
+        DECEPTION,
         INSIGHT,
         INTIMIDATION,
+        INVESTIGATION,
         MEDICINE,
+        NATURE,
         PERSUASION,
-        RELIGION, ACROBATICS, HISTORY, STEALTH
+        RELIGION,
+        ACROBATICS,
+        HISTORY,
+        STEALTH
     };
 
     public enum Feature {
@@ -45,10 +56,17 @@ public abstract class CharacterClass
         LAY_ON_HANDS
     };
 
-    public enum Equipment{ 
+    public enum Equipment{
         PREISTS_PACK,
         EXPLORERS_PACK,
-        HOLY_SYMBOL, MARTIAL, SHIELD, FIVE_JAVELINS, PRIESTS_PACK, CHAIN_MAIL, TEN_DARTS, DUNGEONEERS_PACK
+        HOLY_SYMBOL,
+        MARTIAL,
+        SHIELD,
+        FIVE_JAVELINS,
+        PRIESTS_PACK,
+        CHAIN_MAIL,
+        TEN_DARTS,
+        DUNGEONEERS_PACK
     };
 
     private int[][] hitDie;
@@ -78,11 +96,11 @@ public abstract class CharacterClass
     }
 
     public int[][] getHitDie() { return hitDie; }
-    public void setHitDie(int[][] i) { 
+    public void setHitDie(int[][] i) {
         if (i.length != 2) {
             throw new ArrayIndexOutOfBoundsException("hitDie must come with two arrays");
         }
-        hitDie = i; 
+        hitDie = i;
     }
 
     public Ability[] getPrimaryAbilities() { return primaryAbility; }
