@@ -66,7 +66,9 @@ public abstract class CharacterClass
         PRIESTS_PACK,
         CHAIN_MAIL,
         TEN_DARTS,
-        DUNGEONEERS_PACK
+        DUNGEONEERS_PACK,
+        ARCANE_FOCUS,
+        COMPONENT_POUCH
     };
 
     private int[][] hitDie;
