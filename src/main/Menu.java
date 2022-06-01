@@ -10,6 +10,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.Vector;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -80,6 +81,9 @@ public class Menu extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel20 = new javax.swing.JLabel();
+        spriteButton = new javax.swing.JButton();
+        jPanel26 = new javax.swing.JPanel();
+        spriteTile = new javax.swing.JLabel();
         jp2 = new javax.swing.JPanel();
         javax.swing.JPanel jPanel10 = new javax.swing.JPanel();
         javax.swing.JLabel jLabel7 = new javax.swing.JLabel();
@@ -466,18 +470,58 @@ public class Menu extends javax.swing.JFrame {
         jLabel20.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel20.setText("Note Pad:");
 
+        spriteButton.setText("Random Character Image");
+        spriteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                spriteButtonActionPerformed(evt);
+            }
+        });
+
+        jPanel26.setBackground(new java.awt.Color(246, 246, 246));
+        jPanel26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
+        spriteTile.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/sprites/tile0.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
+        jPanel26.setLayout(jPanel26Layout);
+        jPanel26Layout.setHorizontalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel26Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(spriteTile)
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+        jPanel26Layout.setVerticalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel26Layout.createSequentialGroup()
+                .addContainerGap(18, Short.MAX_VALUE)
+                .addComponent(spriteTile)
+                .addGap(16, 16, 16))
+        );
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(200, 200, 200)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jScrollPane2)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(261, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(200, 200, 200)
+                        .addComponent(jLabel4))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(81, 81, 81)
+                                        .addComponent(spriteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(114, 114, 114)
+                                        .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -487,7 +531,12 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(jLabel20)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(spriteButton))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26))
         );
 
@@ -911,7 +960,8 @@ public class Menu extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTextRaceDes);
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel18.setText("Show Race bonuses for Point stats");
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel18.setText("Race bonuses for Point stats");
 
         ranRaceButton.setText("Random Race");
         ranRaceButton.addActionListener(new java.awt.event.ActionListener() {
@@ -2880,6 +2930,208 @@ public class Menu extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_ranRaceButtonActionPerformed
 
+    private void spriteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_spriteButtonActionPerformed
+        int min = 0;
+        int max = 95;
+        int tileNum = (int)(Math.random()*(max-min+1)+min); 
+        ImageIcon tile0 = new ImageIcon("src/main/sprites/tile0.png");
+        ImageIcon tile1 = new ImageIcon("src/main/sprites/tile1.png");
+        ImageIcon tile2 = new ImageIcon("src/main/sprites/tile2.png");
+        ImageIcon tile3 = new ImageIcon("src/main/sprites/tile3.png");
+        ImageIcon tile4 = new ImageIcon("src/main/sprites/tile4.png");
+        ImageIcon tile5 = new ImageIcon("src/main/sprites/tile5.png");
+        ImageIcon tile6 = new ImageIcon("src/main/sprites/tile6.png");
+        ImageIcon tile7 = new ImageIcon("src/main/sprites/tile7.png");
+        ImageIcon tile8 = new ImageIcon("src/main/sprites/tile8.png");
+        ImageIcon tile9 = new ImageIcon("src/main/sprites/tile9.png");
+        ImageIcon tile10 = new ImageIcon("src/main/sprites/tile10.png");
+        ImageIcon tile11 = new ImageIcon("src/main/sprites/tile11.png");
+        ImageIcon tile12 = new ImageIcon("src/main/sprites/tile12.png");
+        ImageIcon tile13 = new ImageIcon("src/main/sprites/tile13.png");
+        ImageIcon tile14 = new ImageIcon("src/main/sprites/tile14.png");
+        ImageIcon tile15 = new ImageIcon("src/main/sprites/tile15.png");
+        ImageIcon tile16 = new ImageIcon("src/main/sprites/tile16.png");
+        ImageIcon tile17 = new ImageIcon("src/main/sprites/tile17.png");
+        ImageIcon tile18 = new ImageIcon("src/main/sprites/tile18.png");
+        ImageIcon tile19 = new ImageIcon("src/main/sprites/tile19.png");
+        ImageIcon tile20 = new ImageIcon("src/main/sprites/tile20.png");
+        ImageIcon tile21 = new ImageIcon("src/main/sprites/tile21.png");
+        ImageIcon tile22 = new ImageIcon("src/main/sprites/tile22.png");
+        ImageIcon tile23 = new ImageIcon("src/main/sprites/tile23.png");
+        ImageIcon tile24 = new ImageIcon("src/main/sprites/tile24.png");
+        ImageIcon tile25 = new ImageIcon("src/main/sprites/tile25.png");
+        ImageIcon tile26 = new ImageIcon("src/main/sprites/tile26.png");
+        ImageIcon tile27 = new ImageIcon("src/main/sprites/tile27.png");
+        ImageIcon tile28 = new ImageIcon("src/main/sprites/tile28.png");
+        ImageIcon tile29 = new ImageIcon("src/main/sprites/tile29.png");
+        ImageIcon tile30 = new ImageIcon("src/main/sprites/tile30.png");
+        ImageIcon tile31 = new ImageIcon("src/main/sprites/tile31.png");
+        ImageIcon tile32 = new ImageIcon("src/main/sprites/tile32.png");
+        ImageIcon tile33 = new ImageIcon("src/main/sprites/tile33.png");
+        ImageIcon tile34 = new ImageIcon("src/main/sprites/tile34.png");
+        ImageIcon tile35 = new ImageIcon("src/main/sprites/tile35.png");
+        ImageIcon tile36 = new ImageIcon("src/main/sprites/tile36.png");
+        ImageIcon tile37 = new ImageIcon("src/main/sprites/tile37.png");
+        ImageIcon tile38 = new ImageIcon("src/main/sprites/tile38.png");
+        ImageIcon tile39 = new ImageIcon("src/main/sprites/tile39.png");
+        ImageIcon tile40 = new ImageIcon("src/main/sprites/tile40.png");
+        ImageIcon tile41 = new ImageIcon("src/main/sprites/tile41.png");
+        ImageIcon tile42 = new ImageIcon("src/main/sprites/tile42.png");
+        ImageIcon tile43 = new ImageIcon("src/main/sprites/tile43.png");
+        ImageIcon tile44 = new ImageIcon("src/main/sprites/tile44.png");
+        ImageIcon tile45 = new ImageIcon("src/main/sprites/tile45.png");
+        ImageIcon tile46 = new ImageIcon("src/main/sprites/tile46.png");
+        ImageIcon tile47 = new ImageIcon("src/main/sprites/tile47.png");
+        ImageIcon tile48 = new ImageIcon("src/main/sprites/tile48.png");
+        ImageIcon tile49 = new ImageIcon("src/main/sprites/tile49.png");
+        ImageIcon tile50 = new ImageIcon("src/main/sprites/tile50.png");
+        ImageIcon tile51 = new ImageIcon("src/main/sprites/tile51.png");
+        ImageIcon tile52 = new ImageIcon("src/main/sprites/tile52.png");
+        ImageIcon tile53 = new ImageIcon("src/main/sprites/tile53.png");
+        ImageIcon tile54 = new ImageIcon("src/main/sprites/tile54.png");
+        ImageIcon tile55 = new ImageIcon("src/main/sprites/tile55.png");
+        ImageIcon tile56 = new ImageIcon("src/main/sprites/tile56.png");
+        ImageIcon tile57 = new ImageIcon("src/main/sprites/tile57.png");
+        ImageIcon tile58 = new ImageIcon("src/main/sprites/tile58.png");
+        ImageIcon tile59 = new ImageIcon("src/main/sprites/tile59.png");
+        ImageIcon tile60 = new ImageIcon("src/main/sprites/tile60.png");
+        ImageIcon tile61 = new ImageIcon("src/main/sprites/tile61.png");
+        ImageIcon tile62 = new ImageIcon("src/main/sprites/tile62.png");
+        ImageIcon tile63 = new ImageIcon("src/main/sprites/tile63.png");
+        ImageIcon tile64 = new ImageIcon("src/main/sprites/tile64.png");
+        ImageIcon tile65 = new ImageIcon("src/main/sprites/tile65.png");
+        ImageIcon tile66 = new ImageIcon("src/main/sprites/tile66.png");
+        ImageIcon tile67 = new ImageIcon("src/main/sprites/tile67.png");
+        ImageIcon tile68 = new ImageIcon("src/main/sprites/tile68.png");
+        ImageIcon tile69 = new ImageIcon("src/main/sprites/tile69.png");
+        ImageIcon tile70 = new ImageIcon("src/main/sprites/tile70.png");
+        ImageIcon tile71 = new ImageIcon("src/main/sprites/tile71.png");
+        ImageIcon tile72 = new ImageIcon("src/main/sprites/tile72.png");
+        ImageIcon tile73 = new ImageIcon("src/main/sprites/tile73.png");
+        ImageIcon tile74 = new ImageIcon("src/main/sprites/tile74.png");
+        ImageIcon tile75 = new ImageIcon("src/main/sprites/tile75.png");
+        ImageIcon tile76 = new ImageIcon("src/main/sprites/tile76.png");
+        ImageIcon tile77 = new ImageIcon("src/main/sprites/tile77.png");
+        ImageIcon tile78 = new ImageIcon("src/main/sprites/tile78.png");
+        ImageIcon tile79 = new ImageIcon("src/main/sprites/tile79.png");
+        ImageIcon tile80 = new ImageIcon("src/main/sprites/tile80.png");
+        ImageIcon tile81 = new ImageIcon("src/main/sprites/tile81.png");
+        ImageIcon tile82 = new ImageIcon("src/main/sprites/tile82.png");
+        ImageIcon tile83 = new ImageIcon("src/main/sprites/tile83.png");
+        ImageIcon tile84 = new ImageIcon("src/main/sprites/tile84.png");
+        ImageIcon tile85 = new ImageIcon("src/main/sprites/tile85.png");
+        ImageIcon tile86 = new ImageIcon("src/main/sprites/tile86.png");
+        ImageIcon tile87 = new ImageIcon("src/main/sprites/tile87.png");
+        ImageIcon tile88 = new ImageIcon("src/main/sprites/tile88.png");
+        ImageIcon tile89 = new ImageIcon("src/main/sprites/tile89.png");
+        ImageIcon tile90 = new ImageIcon("src/main/sprites/tile90.png");
+        ImageIcon tile91 = new ImageIcon("src/main/sprites/tile91.png");
+        ImageIcon tile92 = new ImageIcon("src/main/sprites/tile92.png");
+        ImageIcon tile93 = new ImageIcon("src/main/sprites/tile93.png");
+        ImageIcon tile94 = new ImageIcon("src/main/sprites/tile94.png");
+        ImageIcon tile95 = new ImageIcon("src/main/sprites/tile95.png");
+
+        
+        switch(tileNum) {
+            case 0 -> spriteTile.setIcon(tile0);
+            case 1 -> spriteTile.setIcon(tile1);
+            case 2 -> spriteTile.setIcon(tile2);
+            case 3 -> spriteTile.setIcon(tile3);
+            case 4 -> spriteTile.setIcon(tile4);
+            case 5 -> spriteTile.setIcon(tile5);
+            case 6 -> spriteTile.setIcon(tile6);
+            case 7 -> spriteTile.setIcon(tile7);
+            case 8 -> spriteTile.setIcon(tile8);
+            case 9 -> spriteTile.setIcon(tile9);
+            case 10 -> spriteTile.setIcon(tile10);
+            case 11 -> spriteTile.setIcon(tile11);
+            case 12 -> spriteTile.setIcon(tile12);
+            case 13 -> spriteTile.setIcon(tile13);
+            case 14 -> spriteTile.setIcon(tile14);
+            case 15 -> spriteTile.setIcon(tile15);
+            case 16 -> spriteTile.setIcon(tile16);
+            case 17 -> spriteTile.setIcon(tile17);
+            case 18 -> spriteTile.setIcon(tile18);
+            case 19 -> spriteTile.setIcon(tile19);
+            case 20 -> spriteTile.setIcon(tile20);
+            case 21 -> spriteTile.setIcon(tile21);
+            case 22 -> spriteTile.setIcon(tile22);
+            case 23 -> spriteTile.setIcon(tile23);
+            case 24 -> spriteTile.setIcon(tile24);
+            case 25 -> spriteTile.setIcon(tile25);
+            case 26 -> spriteTile.setIcon(tile26);
+            case 27 -> spriteTile.setIcon(tile27);
+            case 28 -> spriteTile.setIcon(tile28);
+            case 29 -> spriteTile.setIcon(tile29);
+            case 30 -> spriteTile.setIcon(tile30);
+            case 31 -> spriteTile.setIcon(tile31);
+            case 32 -> spriteTile.setIcon(tile32);
+            case 33 -> spriteTile.setIcon(tile33);
+            case 34 -> spriteTile.setIcon(tile34);
+            case 35 -> spriteTile.setIcon(tile35);
+            case 36 -> spriteTile.setIcon(tile36);
+            case 37 -> spriteTile.setIcon(tile37);
+            case 38 -> spriteTile.setIcon(tile38);
+            case 39 -> spriteTile.setIcon(tile39);
+            case 40 -> spriteTile.setIcon(tile40);
+            case 41 -> spriteTile.setIcon(tile41);
+            case 42 -> spriteTile.setIcon(tile42);
+            case 43 -> spriteTile.setIcon(tile43);
+            case 44 -> spriteTile.setIcon(tile44);
+            case 45 -> spriteTile.setIcon(tile45);
+            case 46 -> spriteTile.setIcon(tile46);
+            case 47 -> spriteTile.setIcon(tile47);
+            case 48 -> spriteTile.setIcon(tile48);
+            case 49 -> spriteTile.setIcon(tile49);
+            case 50 -> spriteTile.setIcon(tile50);
+            case 51 -> spriteTile.setIcon(tile51);
+            case 52 -> spriteTile.setIcon(tile52);
+            case 53 -> spriteTile.setIcon(tile53);
+            case 54 -> spriteTile.setIcon(tile54);
+            case 55 -> spriteTile.setIcon(tile55);
+            case 56 -> spriteTile.setIcon(tile56);
+            case 57 -> spriteTile.setIcon(tile57);
+            case 58 -> spriteTile.setIcon(tile58);
+            case 59 -> spriteTile.setIcon(tile59);
+            case 60 -> spriteTile.setIcon(tile60);
+            case 61 -> spriteTile.setIcon(tile61);
+            case 62 -> spriteTile.setIcon(tile62);
+            case 63 -> spriteTile.setIcon(tile63);
+            case 64 -> spriteTile.setIcon(tile64);
+            case 65 -> spriteTile.setIcon(tile65);
+            case 66 -> spriteTile.setIcon(tile66);
+            case 67 -> spriteTile.setIcon(tile67);
+            case 68 -> spriteTile.setIcon(tile68);
+            case 69 -> spriteTile.setIcon(tile69);
+            case 70 -> spriteTile.setIcon(tile70);
+            case 71 -> spriteTile.setIcon(tile71);
+            case 72 -> spriteTile.setIcon(tile72);
+            case 73 -> spriteTile.setIcon(tile73);
+            case 74 -> spriteTile.setIcon(tile74);
+            case 75 -> spriteTile.setIcon(tile75);
+            case 76 -> spriteTile.setIcon(tile76);
+            case 77 -> spriteTile.setIcon(tile77);
+            case 78 -> spriteTile.setIcon(tile78);
+            case 79 -> spriteTile.setIcon(tile79);
+            case 80 -> spriteTile.setIcon(tile80);
+            case 81 -> spriteTile.setIcon(tile81);
+            case 82 -> spriteTile.setIcon(tile82);
+            case 83 -> spriteTile.setIcon(tile83);
+            case 84 -> spriteTile.setIcon(tile84);
+            case 85 -> spriteTile.setIcon(tile85);
+            case 86 -> spriteTile.setIcon(tile86);
+            case 87 -> spriteTile.setIcon(tile87);
+            case 88 -> spriteTile.setIcon(tile88);
+            case 89 -> spriteTile.setIcon(tile89);
+            case 90 -> spriteTile.setIcon(tile90);
+            case 91 -> spriteTile.setIcon(tile91);
+            case 92 -> spriteTile.setIcon(tile92);
+            case 93 -> spriteTile.setIcon(tile93);
+            case 94 -> spriteTile.setIcon(tile94);
+            case 95 -> spriteTile.setIcon(tile95);
+        }
+    }//GEN-LAST:event_spriteButtonActionPerformed
+
     
     public void setSpell0() {
         switch (spell) {
@@ -3699,6 +3951,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -3779,6 +4032,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel sorcererTab;
     private javax.swing.JLabel spellNameLabel;
     private javax.swing.JTextField spellNameText;
+    private javax.swing.JButton spriteButton;
+    private javax.swing.JLabel spriteTile;
     private javax.swing.JLabel strPNG;
     private javax.swing.JTable tableCharacters;
     private javax.swing.JList<String> warlock0;
