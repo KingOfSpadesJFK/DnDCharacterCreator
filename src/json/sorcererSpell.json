@@ -1,334 +1,330 @@
-//Sorcerer spell list
-
-//Cantrips (level 0)
-[
-	{
-		"name": "Acid Splash",
-		"castingTime": "1 action",
-		"range": 60,
-		"components": "V, S",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Blade Ward",
-		"castingTime": "1 action",
-		"range": "Self",
-		"components": "V, S",
-		"duration": "1 round",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Chill Touch",
-		"castingTime": "1 action",
-		"range": 120,
-		"components": "V, S",
-		"duration": "1 round",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Dancing Lights",
-		"castingTime": "1 action",
-		"range": 120,
-		"components": "V, S, M",
-		"duration": "1 min",
-		"concentration": true,
-		"description": ""
-	},
-	{
-		"name": "Fire Bolt",
-		"castingTime": "1 action",
-		"range": 120,
-		"components": "V, S",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Friends",
-		"castingTime": "1 action",
-		"range": "Self",
-		"components": "S, M",
-		"duration": "1 min",
-		"concentration": true,
-		"description": ""
-	},
-	{
-		"name": "Light",
-		"castingTime": "1 action",
-		"range": "Touch",
-		"components": "V, M",
-		"duration": "1 hour",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Mage Hand",
-		"castingTime": "1 action",
-		"range": 30,
-		"components": "V, S",
-		"duration": "1 min",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Mending",
-		"castingTime": "1 min",
-		"range": "touch",
-		"components": "V, S, M",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Message",
-		"castingTime": "1 action",
-		"range": 120,
-		"components": "V, S, M",
-		"duration": "1 round",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Minor Illusion",
-		"castingTime": "1 action",
-		"range": 30,
-		"components": "S, M",
-		"duration": "1 min",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Poison Spray",
-		"castingTime": "1 action",
-		"range": 10,
-		"components": "V, S",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Prestidigitation",
-		"castingTime": "1 action",
-		"range": 10,
-		"components": "V, S",
-		"duration": "1 hour",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Ray of Frost",
-		"castingTime": "1 action",
-		"range": 60,
-		"components": "V, S",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Shocking Grasp",
-		"castingTime": "1 action",
-		"range": "Touch",
-		"components": "V, S",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "True Strike",
-		"castingTime": "1 action",
-		"range": 30,
-		"components": "S",
-		"duration": "1 round",
-		"concentration": true,
-		"description": ""
-	}
-]
-
-//Level 1
-[
-	//
-	{
-		"name": "Burning Hands",
-		"castingTime": "1 action",
-		"range": "Self",
-		"components": "V, S",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Charm Person",
-		"castingTime": "1 action",
-		"range": 30,
-		"components": "V, S",
-		"duration": "1 hour",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Chromatic Orb",
-		"castingTime": "1 action",
-		"range": 90,
-		"components": "V, S, M",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Color Spray",
-		"castingTime": "1 action",
-		"range": "Self",
-		"components": "V, S, M",
-		"duration": "1 round",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Comprehend Languages",
-		"castingTime": "1 action",
-		"range": "Self",
-		"components": "V, S, M",
-		"duration": "1 hour",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Detect Magic",
-		"castingTime": "1 action",
-		"range": "Self",
-		"components": "V, S",
-		"duration": "10 min",
-		"concentration": true,
-		"description": ""
-	},
-	{
-		"name": "Disguise Self",
-		"castingTime": "1 action",
-		"range": "Self",
-		"components": "V, S",
-		"duration": "1 hour",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Expeditious Retreat",
-		"castingTime": "1 bonus action",
-		"range": "Self",
-		"components": "V, S",
-		"duration": "10 min",
-		"concentration": true,
-		"description": ""
-	},
-	{
-		"name": "False Life",
-		"castingTime": "1 action",
-		"range": "Self",
-		"components": "V, S, M",
-		"duration": "1 hour",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Feather Fall",
-		"castingTime": "1 action",
-		"range": 60,
-		"components": "V, M",
-		"duration": "1 min",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Fog Cloud",
-		"castingTime": "1 action",
-		"range": 120,
-		"components": "V, S",
-		"duration": "1 hour",
-		"concentration": true,
-		"description": ""
-	},
-	{
-		"name": "Jump",
-		"castingTime": "1 action",
-		"range": "Touch",
-		"components": "V, S, M",
-		"duration": "1 min",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Mage Armor",
-		"castingTime": "1 action",
-		"range": "Touch",
-		"components": "V, S, M",
-		"duration": "8 hours",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Magic Missile",
-		"castingTime": "1 action",
-		"range": 120,
-		"components": "V, S",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Ray of Sickness",
-		"castingTime": "1 action",
-		"range": 60,
-		"components": "V, S",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Shield",
-		"castingTime": "1 reaction",
-		"range": "Self",
-		"components": "V, S",
-		"duration": "1 round",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Silent Image",
-		"castingTime": "1 action",
-		"range": 60,
-		"components": "V, S, M",
-		"duration": "10 min",
-		"concentration": true,
-		"description": ""
-	},
-	{
-		"name": "Sleep",
-		"castingTime": "1 action",
-		"range": 90,
-		"components": "V, S, M",
-		"duration": "1 min",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Thunderwave",
-		"castingTime": "1 action",
-		"range": "Self",
-		"components": "V, S",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"description": ""
-	},
-	{
-		"name": "Witch Bolt",
-		"castingTime": "1 action",
-		"range": 30,
-		"components": "V, S, M",
-		"duration": "1 min",
-		"concentration": true,
-		"description": ""
-	}
-]
+{
+	"cantrips": [
+		{
+			"name": "Acid Splash",
+			"castingTime": "1 action",
+			"range": 60,
+			"components": "V, S",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Blade Ward",
+			"castingTime": "1 action",
+			"range": "Self",
+			"components": "V, S",
+			"duration": "1 round",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Chill Touch",
+			"castingTime": "1 action",
+			"range": 120,
+			"components": "V, S",
+			"duration": "1 round",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Dancing Lights",
+			"castingTime": "1 action",
+			"range": 120,
+			"components": "V, S, M",
+			"duration": "1 min",
+			"concentration": true,
+			"description": ""
+		},
+		{
+			"name": "Fire Bolt",
+			"castingTime": "1 action",
+			"range": 120,
+			"components": "V, S",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Friends",
+			"castingTime": "1 action",
+			"range": "Self",
+			"components": "S, M",
+			"duration": "1 min",
+			"concentration": true,
+			"description": ""
+		},
+		{
+			"name": "Light",
+			"castingTime": "1 action",
+			"range": "Touch",
+			"components": "V, M",
+			"duration": "1 hour",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Mage Hand",
+			"castingTime": "1 action",
+			"range": 30,
+			"components": "V, S",
+			"duration": "1 min",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Mending",
+			"castingTime": "1 min",
+			"range": "touch",
+			"components": "V, S, M",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Message",
+			"castingTime": "1 action",
+			"range": 120,
+			"components": "V, S, M",
+			"duration": "1 round",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Minor Illusion",
+			"castingTime": "1 action",
+			"range": 30,
+			"components": "S, M",
+			"duration": "1 min",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Poison Spray",
+			"castingTime": "1 action",
+			"range": 10,
+			"components": "V, S",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Prestidigitation",
+			"castingTime": "1 action",
+			"range": 10,
+			"components": "V, S",
+			"duration": "1 hour",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Ray of Frost",
+			"castingTime": "1 action",
+			"range": 60,
+			"components": "V, S",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Shocking Grasp",
+			"castingTime": "1 action",
+			"range": "Touch",
+			"components": "V, S",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "True Strike",
+			"castingTime": "1 action",
+			"range": 30,
+			"components": "S",
+			"duration": "1 round",
+			"concentration": true,
+			"description": ""
+		}
+	],
+	"level_1": [
+		{
+			"name": "Burning Hands",
+			"castingTime": "1 action",
+			"range": "Self",
+			"components": "V, S",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Charm Person",
+			"castingTime": "1 action",
+			"range": 30,
+			"components": "V, S",
+			"duration": "1 hour",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Chromatic Orb",
+			"castingTime": "1 action",
+			"range": 90,
+			"components": "V, S, M",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Color Spray",
+			"castingTime": "1 action",
+			"range": "Self",
+			"components": "V, S, M",
+			"duration": "1 round",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Comprehend Languages",
+			"castingTime": "1 action",
+			"range": "Self",
+			"components": "V, S, M",
+			"duration": "1 hour",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Detect Magic",
+			"castingTime": "1 action",
+			"range": "Self",
+			"components": "V, S",
+			"duration": "10 min",
+			"concentration": true,
+			"description": ""
+		},
+		{
+			"name": "Disguise Self",
+			"castingTime": "1 action",
+			"range": "Self",
+			"components": "V, S",
+			"duration": "1 hour",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Expeditious Retreat",
+			"castingTime": "1 bonus action",
+			"range": "Self",
+			"components": "V, S",
+			"duration": "10 min",
+			"concentration": true,
+			"description": ""
+		},
+		{
+			"name": "False Life",
+			"castingTime": "1 action",
+			"range": "Self",
+			"components": "V, S, M",
+			"duration": "1 hour",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Feather Fall",
+			"castingTime": "1 action",
+			"range": 60,
+			"components": "V, M",
+			"duration": "1 min",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Fog Cloud",
+			"castingTime": "1 action",
+			"range": 120,
+			"components": "V, S",
+			"duration": "1 hour",
+			"concentration": true,
+			"description": ""
+		},
+		{
+			"name": "Jump",
+			"castingTime": "1 action",
+			"range": "Touch",
+			"components": "V, S, M",
+			"duration": "1 min",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Mage Armor",
+			"castingTime": "1 action",
+			"range": "Touch",
+			"components": "V, S, M",
+			"duration": "8 hours",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Magic Missile",
+			"castingTime": "1 action",
+			"range": 120,
+			"components": "V, S",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Ray of Sickness",
+			"castingTime": "1 action",
+			"range": 60,
+			"components": "V, S",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Shield",
+			"castingTime": "1 reaction",
+			"range": "Self",
+			"components": "V, S",
+			"duration": "1 round",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Silent Image",
+			"castingTime": "1 action",
+			"range": 60,
+			"components": "V, S, M",
+			"duration": "10 min",
+			"concentration": true,
+			"description": ""
+		},
+		{
+			"name": "Sleep",
+			"castingTime": "1 action",
+			"range": 90,
+			"components": "V, S, M",
+			"duration": "1 min",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Thunderwave",
+			"castingTime": "1 action",
+			"range": "Self",
+			"components": "V, S",
+			"duration": "Instantaneous",
+			"concentration": false,
+			"description": ""
+		},
+		{
+			"name": "Witch Bolt",
+			"castingTime": "1 action",
+			"range": 30,
+			"components": "V, S, M",
+			"duration": "1 min",
+			"concentration": true,
+			"description": ""
+		}
+	]
+}
