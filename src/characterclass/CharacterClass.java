@@ -23,6 +23,7 @@ public abstract class CharacterClass
         DARTS,
         JAVELIN,
         MACE,
+        GREATAXE,
         QUARTERSTAFF,
         SCIMITARS,
         SICKLE,
@@ -33,6 +34,8 @@ public abstract class CharacterClass
         LONGBOW,
         TWO_MARTIAL,
         PRIESTS_PACK,
+        SCHOLARS_PACK,
+        EXPLORERS_PACK,
         DUNGEONEERS_PACK
     };
 
@@ -65,13 +68,17 @@ public abstract class CharacterClass
         MARTIAL_ARTS,
         FIGHTING_STYLE,
         ACTION_SURGE,
-        SECOND_WIND
+        SECOND_WIND,
+        SPELLCASTING,
+        ARCANE_RECOVERY
     };
 
     public enum Equipment{
         PREISTS_PACK,
         EXPLORERS_PACK,
         HOLY_SYMBOL,
+        DAGGER,
+        SPELLBOOK,
         MARTIAL,
         SHIELD,
         FIVE_JAVELINS,
