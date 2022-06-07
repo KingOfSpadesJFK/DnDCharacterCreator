@@ -5,7 +5,8 @@ import java.util.List;
 import characterclass.Ranger.Equipment;
 import main.GameCharacter.Ability;
 
-public class Druid extends CharacterClass {
+public class Druid extends CharacterClass
+{
 	int constitutionModifier;
 	int proficiencyBonus;
 	int hitPoints = (constitutionModifier + 8);
@@ -55,10 +56,8 @@ public class Druid extends CharacterClass {
 	};
 	
 
-	public Druid(int[] hitDie, Ability[] primaryAbility, Ability[] savingThrows, ArmorType[] armorProficiencies,
-			WeaponType[] weaponProficiencies) {
-		super(hitDie, primaryAbility, savingThrows, armorProficiencies, weaponProficiencies);
-	}{
+	public Druid() {
+		super(hitDie, primaryAbility, savingThrows, armorProficiencies, weaponProficiencies, skillset, null);
 		List<WeaponType> equipmentChoice = new ArrayList<WeaponType>();
 		List<Equipment> equipment = new ArrayList<Equipment>();
 		List<ArmorType> armor = new ArrayList<ArmorType>();
