@@ -14,6 +14,7 @@ public abstract class CharacterClass
         SIMPLE,
         MARTIAL,
         HAND_CROSSBOW,
+        HANDAXE,
         LONGSWORD,
         RAPIER,
         SHORTSWORD,
@@ -36,24 +37,35 @@ public abstract class CharacterClass
     };
 
     public enum Skill {
+        ACROBATICS,
         ATHLETICS,
         ARCANA,
+        ANIMAL_HANDLING,
         DECEPTION,
         INSIGHT,
         INTIMIDATION,
         INVESTIGATION,
         MEDICINE,
         NATURE,
+        PERCEPTION,
+        PERFORMANCE,
+        SLIGHT_OF_HAND,
         PERSUASION,
         RELIGION,
         ACROBATICS,
         HISTORY,
+        SURVIVAL,
         STEALTH
     };
 
     public enum Feature {
         DIVINE_SENSE,
-        LAY_ON_HANDS
+        LAY_ON_HANDS,
+        UNARMORED_DEFENSE,
+        MARTIAL_ARTS,
+        FIGHTING_STYLE,
+        ACTION_SURGE,
+        SECOND_WIND
     };
 
     public enum Equipment{
@@ -63,8 +75,10 @@ public abstract class CharacterClass
         MARTIAL,
         SHIELD,
         FIVE_JAVELINS,
+        TWENTY_BOLTS,
         PRIESTS_PACK,
         CHAIN_MAIL,
+        LEATHER_ARMOR,
         TEN_DARTS,
         DUNGEONEERS_PACK,
         ARCANE_FOCUS,
