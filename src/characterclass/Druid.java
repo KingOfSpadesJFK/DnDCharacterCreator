@@ -85,4 +85,11 @@ public class Druid extends CharacterClass
 		equipmentChoice1.add(WeaponType.LONGBOW);
 			int arrows = 20;
 
-}}
+}
+
+
+	@Override
+	public int getHitPoints() {
+		// TODO Auto-generated method stub
+		return 0;
+	}}
